@@ -1,0 +1,154 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>金沙娱乐场-网投领导者-官方线路备用网!</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">	
+  <meta name="viewport"  content="width=device-width,user-scalable=no">
+  <link href="images/ico.ico" rel="shortcut icon">
+  
+  <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.js"></script>
+  
+  <link rel="stylesheet" rev="stylesheet" href="style/reset.css" type="text/css" />
+  <link rel="stylesheet" rev="stylesheet" href="style/global.css" type="text/css" />
+  <link rel="stylesheet" rev="stylesheet" href="style/index.css" type="text/css" />
+  
+  <script type="text/javascript" src="script/demo.js"></script>
+  <script type="text/javascript" src="script/index.js"></script>
+  <script type="text/javascript">
+    var oWidth = document.documentElement.clientWidth || document.body.clientWidth;
+    if (oWidth < 1024) {
+      window.location.href = "m/index.html";
+    } else {}
+    window.addEventListener("orientationchange", function () {
+      var oWidth = document.documentElement.clientWidth || document.body.clientWidth;
+      if (oWidth < 1024) {
+        window.location.href = "m/index.html";
+      } else {}
+    }, false);
+    window.addEventListener("resize", function () {
+      var oWidth = document.documentElement.clientWidth || document.body.clientWidth;
+      if (oWidth < 1024) {
+        window.location.href = "m/index.html";
+      } else {}
+    }, false);
+  </script>
+  <script type="text/javascript">
+   
+    eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('1 m={2:0(a){1 a=a?a:l;1 b=4.7.e||4.j.e;1 c=b/a;1 d=c*p;4.7.o.f=d+\'g\'},h:0(a){1 b=i;b.2(a);3.5(0(){b.2(a)},6);3.9("n",0(){3.5(0(){b.2(a)},6)},8);3.9("k",0(){3.5(0(){b.2(a)},6)},8)}}',26,26,'function|var|remFn|window|document|setTimeout|200|documentElement|false|addEventListener|||||clientWidth|fontSize|px|init|this|body|resize|750|rem|orientationchange|style|100'.split('|'),0,{}))
+    rem.init(1920);
+    $(function () {
+        /*$('.down').on('click',function () {
+            $('.code').toggle();
+        });*/
+        $('.down').on('mouseover mouseout',function (e) {
+            if (e.type == 'mouseover') {
+                $('.code').show();
+            } else if (e.type == 'mouseout') {
+                $('.code').hide();
+            }
+        });
+        //存放注册的网址
+        let arr_url = [];
+        //存放显示的网址
+        let arr_url_name = [];
+        let arr_url_nameColor = ['#ff0000','#fff000'];
+        let urls = $('.btnbx a');
+        console.log(urls);
+        for (let i = 0;i < urls.length;i++){
+            arr_url.push(urls[i].href);
+            // arr_url_name.push(urls[i].href.substr(12,2));
+            arr_url_name.push(urls[i].host);
+        }
+        console.log(arr_url_name);
+
+      /*注册网站的网址随机变*/
+        function changeUrl() {
+            let num = Math.floor(Math.random()*urls.length);
+            $('.zhuce a').attr('href',arr_url[num]);
+        }
+        let timer1 = setInterval(changeUrl,1000);
+
+
+
+        /*网址显示按顺序循环*/
+        let num1 = 0;
+        function changeUrl_name() {
+                $('#url_name').text(arr_url_name[num1]);
+                num1++;
+                if (num1 == arr_url_name.length) {
+                    num1 = 0;
+                }
+            }
+        let timer2 = setInterval(changeUrl_name,1000);
+
+        /*改变颜色*/
+        let num2 = 0;
+        function changeColor() {
+            $('#url_name').css('color',arr_url_nameColor[num2]);
+            num2++;
+            if (num2 == arr_url_nameColor.length){
+                num2 = 0;
+            }
+        }
+        let timer3 = setInterval(changeColor,1000);
+
+    })
+  </script>
+</head>
+<body>
+  <div class="top">
+    <div class="inner">
+      <div class="mg1" style="">
+        <!--<img src="images/mg1.gif" alt="" />-->
+        <!--<p style="text-align: center;width: 272px;height: 40px;line-height: 40px;font-size: 22px;color: #ffffff;">www.<span id="url_name" style="color:red;display: inline-block;width: 30px;">dd</span>88js.com</p>-->
+        <p id="url_name" style="text-align: center;width: 272px;height: 40px;line-height: 40px;font-size: 22px;color: #fff000;">www.jj88js.com</p>
+      </div>
+      <div class="mg2"><img src="images/mg2.png" alt="" /></div>
+      <!--<div class="mg3"><img src="images/gif.gif" alt="" /></div>-->
+      <div class="mg3" style="">
+        <div class="down" style="float: left;margin-right: 20px;position: relative;">
+          <a href="#"><img src="images/down.gif" alt=""></a>
+          <div class="code" style="display: none;">
+            <img src="images/js.jpg" alt="" style="vertical-align: middle;position: absolute;top: 134px;z-index: 1;width: 200px;height: 200px;">
+          </div>
+        </div>
+        <div class="zhuce" style="float: right;">
+          <a href="https://www.jj88js.com" target="_blank"><img src="images/zhuce.gif" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header">
+    <div class="inner">
+      <div class="img1"><img src="images/img1.png" alt="" /></div>
+      <div class="logo"><h1><a href="#" class="" ><img src="images/logo.png" alt="" /></a></h1></div>
+      <div class="img2"><a href="https://pecan.saazoo.com/chat/chatClient/chatbox.jsp?companyID=365044611&configID=203&jid=6916046715&s=1" class="" target="_blank"><img src="images/kefi.png" alt="" /></a></div>
+    </div>
+  </div>
+  
+  <div class="content">
+    <div class="inner">
+      <div class="btnbx">
+        <a href="https://s0344.com" target="_blank" class="p1" ><img src="images/btn1.png" alt="" /></a>
+        <a href="https://js36663.com" target="_blank" class="p2" ><img src="images/btn2.png" alt="" /></a>
+        <a href="https://js99333.com" target="_blank" class="p3" ><img src="images/btn3.png" alt="" /></a>
+        <a href="https://jj88js.com" target="_blank" class="p4" ><img src="images/btn4.png" alt="" /></a>
+        <a href="https://js33443.com" target="_blank" class="p5" ><img src="images/btn5.png" alt="" /></a>
+      </div>
+      
+      <div class="lqx"><a href="https://ub.xf0371.com/UB/UB-Launcher.exe" target="_blank" class="" ><img src="images/ublogo.png" alt="" /></a></div>
+    </div>
+  </div>
+  
+</body>
+<!--[if lt IE 11]>
+<div class="eachlisq"><div class="" style="display:table;width:100%;height:100%"><div class="" style="display:table-cell;vertical-align:middle"><div class="dwnntl1">温馨提示：<strong class="sainsnb">您的浏览器需要更新才能访问哦 ^_^</strong></div><div class="dqiangshiy">请使用 <strong class="sainsnb">Chrome</strong>、 <strong class="sainsnb">firefox</strong>、 <strong class="sainsnb">Safari</strong>、 <strong class="sainsnb">opera</strong> 、 <strong class="sainsnb">Microsoft Edge</strong>、 <strong class="sainsnb">Internet Explorer 11</strong> 浏览器访问~</div><p class="dsannp"><a class="sannbw1" href="http://www.google.com/chrome" target="_blank"></a> <a class="sannbw2" href="http://www.apple.com/safari" target="_blank"></a> <a class="sannbw3" href="http://www.firefox.com/" target="_blank"></a> <a class="sannbw4" href="http://www.opera.com/zh-cn" target="_blank"></a> <a class="sannbw5" href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank"></a> <a class="sannbw6" href="https://support.microsoft.com/en-us/help/17621/internet-explorer-downloads" target="_blank"></a></p><h4 class="dwnsnht">Please update to a modern browser</h4></div></div></div>
+<style type="text/css">
+  .eachlisq{position:fixed;left:0;top:0;width:100%;height:100%;z-index:9999;background:#fff;text-align:center;color:#666}.sainsnb{border-bottom:1px dotted #930;font-weight:400;padding-bottom:2px;color:#930}.dwnntl1{font-size:23px;font-weight:700;line-height:50px}.dqiangshiy{font-size:18px;line-height:40px;font-weight:700}.dsannp{padding:40px 0;text-align:center}.dsannp a{display:block;width:125px;height:135px;margin:0 10px;display:inline-block;background:url(images/lqx.png) no-repeat}.dsannp a.sannbw1{background-position:0 0}.dsannp a.sannbw2{background-position:-125px 0}.dsannp a.sannbw3{background-position:-250px 0}.dsannp a.sannbw4{background-position:-375px 0}.dsannp a.sannbw5{background-position:-500px 0}.dsannp a.sannbw6{background-position:-625px 0}.dwnsnht{margin:20px 0;color:#888}
+</style>
+<![endif]-->
+</html>

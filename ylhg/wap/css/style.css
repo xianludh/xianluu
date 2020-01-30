@@ -1,0 +1,313 @@
+body {
+	background-color: #18181B;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a {
+	color: #fff;
+}
+img {
+	width: 100%;
+}
+.header {
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	padding: 0 0.2rem 0.54rem 0.2rem;
+	box-sizing: border-box;
+	position: relative;
+}
+.header img {
+	display: block;
+}
+.header .hLogo {
+	width: 3.4rem;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -1.7rem;
+}
+.header .hImg {
+	margin-top: 0.4rem;
+	float: left;
+	width: 3rem;
+}
+.header .hService {
+	float: right;
+	width: 2.9rem;
+	margin-top: 0.2rem;
+}
+.slick .slick-dots {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 99;
+}
+.slick .slick-dots li {
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	margin: 0 4px;
+	border-radius: 50%;
+	background: #171717;
+}
+.slick .slick-dots li.slick-active {
+	background: #EB5000;
+}
+.slick .slick-dots li button {
+	display: none;
+}
+#main {
+	background-color: #202023;
+	padding: 0.15rem 0.18rem 0.4rem;
+}
+.tabUl li {
+	width: 33%;
+	float: left;
+	margin-right: 0.5%;
+}
+.tabUl li:last-child {
+	margin-right: 0;
+}
+.tabUl li a {
+	display: block;
+	text-align: center;
+	background-color: #F2F2F2;
+	border-radius: 3px 3px 0 0;
+	padding: 0.3rem 0.2rem 0.2rem;
+	color: #666;
+	position: relative;
+}
+.tabUl li span {
+	display: block;
+	font-size: 0.32rem;
+	padding-top: 0.75rem;
+}
+.tabUl li.on a,
+.tabUl li a:hover {
+	background-color: #fff;
+	color: #eb5000;
+}
+.tabUl .li01 a span {
+	background: url(../images/img01.png) no-repeat center top;
+	background-size: auto 0.6rem;
+}
+.tabUl .li01.on a span,
+.tabUl .li01 a:hover span {
+	background: url(../images/img01_on.png) no-repeat center top;
+	background-size: auto 0.6rem;
+}
+.tabUl .li02 a span {
+	background: url(../images/img02.png) no-repeat center top;
+	background-size: auto 0.6rem;
+}
+.tabUl .li02.on a span,
+.tabUl .li02 a:hover span {
+	background: url(../images/img02_on.png) no-repeat center top;
+	background-size: auto 0.6rem;
+}
+.tabUl .li03 a span {
+	background: url(../images/img03.png) no-repeat center top;
+	background-size: auto 0.6rem;
+}
+.tabUl .li03.on a span,
+.tabUl .li03 a:hover span {
+	background: url(../images/img03_on.png) no-repeat center top;
+	background-size: auto 0.6rem;
+}
+.speedlist li {
+	 *zoom:1;
+	 margin-bottom:.45rem;
+	overflow: hidden;
+	zoom: 1;
+}
+.speedlist li .icon01 {
+	margin: 0.2rem 0.2rem 0 0;
+	width: 0.3rem;
+	float: left;
+}
+.speedlist li .icon02 {
+	margin: 0.2rem 0.2rem 0 0;
+	width: 0.7rem;
+	float: left;
+}
+.speedlist .ms {
+	float: left;
+	font-size:.37rem;
+	height:.7rem;
+	line-height:.7rem;
+	width: 1.6rem;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius:.11rem;
+	background: #1d1d1d;
+	border: solid 1px #505050;
+	margin-right:.2rem;
+	color: #00fe36;
+}
+.speedlist .url {
+	margin-right: 0.1rem;
+	width:3.2rem;
+	float: left;
+	display: block;
+	font-size:.40rem;
+	height:.7rem;
+	line-height:.7rem;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	border-radius:.11rem;
+	background: #1d1d1d;
+	border: solid 1px #505050;
+	color: #938656;
+	text-align: left;
+	padding-left: .3rem
+}
+.speedlist .btn-open {
+	width: 2rem;
+	line-height: 1;
+	float: left;
+	font-size:.35rem;
+	height:.7rem;
+	line-height:.7rem;
+	display: block;
+	text-align: center;
+}
+.speedlist .btn-open a {
+	background: url(../images/btn.png) no-repeat center top;
+	background-size: 2rem auto;
+	display: block;
+	color: #fff;
+}
+/*.speedlist .btn-open a:hover {
+	background: url(../images/btn_over.png) no-repeat center top;
+	background-size: 2rem auto;
+	color: #fff;
+}*/
+.tabBox {
+	 background-color: #28282b;
+    border: 1px solid #505050;
+    border-radius: 5px;
+    margin-bottom: 0.4rem;
+    padding: 0.5rem 0.2rem 0.2rem 0.4rem;
+}
+.tabBox02 {
+	padding-bottom: 0.35rem;
+}
+.ulLink li {
+	width: 2.28rem;
+	margin-right:0.15rem;
+	float: left;
+}
+.ulLink li a {
+	display: block;
+	background-color: #282828;
+	border: 1px solid #666;
+	border-radius: 3px;
+	padding: 0.2rem 0.1rem;
+	text-align: center;
+}
+.ulLink li:last-child {
+	margin-right: 0;
+}
+.ulLink li img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 0.06rem;
+	width: auto;
+	height: 0.35rem;
+}
+.ulLink li span {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0.35rem;
+}
+.ulLink li a:hover {
+	/*color: #fff;
+	background-color: #EB5000;*/
+}
+.gameUl {
+	border: 1px solid #E5E5E5;
+	border-bottom: none;
+}
+.gameUl li {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+.gameUl li a {
+	padding: 0.54rem 0 0.3rem;
+	display: block;
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+}
+.gameUl li:nth-child(3n) a {
+	border-right: none;
+}
+.gameUl li a img {
+	width: auto;
+	height: 0.84rem;
+}
+.gameUl li span {
+	margin-top: 0.42rem;
+	color: #666;
+	font-size: 0.32rem;
+	display: block;
+}
+.gameUl li a:hover span {
+	color: #eb5000;
+}
+.tabBox03 {
+	padding: 0;
+}
+.tabBox04 {
+	padding: 1.7rem 0.5rem 2.15rem;
+}
+.tabBox04 .title {
+	width: 5.36rem;
+	margin: 0 auto 1.15rem;
+}
+.tabBox04 .text {
+	width: 3.8rem;
+	margin: 0 auto 0.5rem;
+}
+.tabBox04 .downUl li {
+	float: left;
+	margin: 0;
+	text-align: center;
+}
+.tabBox04 .downUl li img {
+	margin-bottom: -0.25rem;
+	width: auto;
+	height: 4.25rem;
+}
+.tabBox04 .downUl li p {
+	margin-top: 0.1rem;
+	color: #666;
+	font-size: 0.35rem;
+}
+.tabBox04 .downUl span {
+	padding-left: 0.45rem;
+}
+.tabBox04 .downUl .li01 span {
+	background: url(../images/icon01.png) no-repeat left center;
+	background-size: 0.35rem auto;
+}
+.tabBox04 .downUl .li02 span {
+	background: url(../images/icon02.png) no-repeat left center;
+	background-size: 0.35rem auto;
+}
+
+#footer {
+	padding: 0.2rem 0 0.3rem;
+}
+#footer p {
+	text-align: center;
+	color: #666;
+	font-size: 0.32rem;
+}

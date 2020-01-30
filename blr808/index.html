@@ -1,0 +1,256 @@
+﻿<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <link rel="stylesheet" type="text/css" href="newimages/style.css">
+  <link rel="stylesheet" type="text/css" href="newimages/iconfont.css">
+
+  <script src="newimages/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="newimages/code.js" type="text/javascript" charset="utf-8"></script>
+
+  <title>澳门巴黎人</title>
+  <script>
+    if (/AppleWebKit.*Mobile/i.test(navigator.userAgent)
+      || /Android/i.test(navigator.userAgent)
+      || /BlackBerry/i.test(navigator.userAgent)
+      || /IEMobile/i.test(navigator.userAgent)
+      || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+      window.location.href = "./m/";//要跳转的目录
+    }
+  </script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="head-box pr">
+    <img src="newimages/logo.jpg" alt="" class="fl">
+    <a href="javascript:void (0)">
+      <img src="newimages/head-mobile.jpg" alt="" class="fl"></a>
+    <img src="newimages/head-address.jpg" alt="" class="head-address">
+    <div class="fr">
+      <span id="showtime" class="time"><i class="iconfont"></i>美东时间：2018/11/6--20:27:11</span>
+      <div class="link-box">
+        | 请按Ctrl+D键收藏
+      </div>
+    </div>
+  </div>
+  <div class="news-banner clearfix">
+    <div class="news-box">
+      <div class="hd">
+        <a href="javascript:;" class="prev"><i class="iconfont">
+          </i></a>
+        <a href="javascript:;" class="next"><i class="iconfont">
+          </i></a>
+      </div>
+      <div class="bd">
+        <ul class="txt">
+          <li>
+            1：巴黎若不动人，世间再无浪漫！澳门巴黎人，盛大开业，亿万彩金等着您。
+          </li>
+          <li>
+            2：巴黎人携手线上顶级六大视讯厅AG  BBIN  DG  OG   DS  BG共创线上博彩第一品牌。
+          </li>
+          <li>
+            3：MW、AG电子游艺千炮捕鱼金龙赔率高达1000倍，高赔率高中奖率每一发都能中大奖。
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+    <div class="banner-box">
+      <div class="hd">
+        <a href="javascript:;" class="prev"><i class="iconfont">
+          </i></a>
+        <a href="javascript:;" class="next"><i class="iconfont">
+          </i></a>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
+      <div class="bd">
+        <ul>
+          <li>
+            <a style="background: url(newimages/banner1.jpg) no-repeat 100% 100%;"></a>
+          </li>
+          <li>
+            <a style="background: url(newimages/banner2.jpg) no-repeat 100% 100%;"></a>
+          </li>
+          <li>
+            <a style="background: url(newimages/banner3.jpg) no-repeat 100% 100%;"></a>
+          </li>
+          <li>
+            <a style="background: url(newimages/banner4.jpg) no-repeat 100% 100%;"></a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="center-box">
+    <a onclick="address()" href="javascript:;" class="btn"></a>
+    <img src="newimages/car.png" class="car">
+  </div>
+  <ul class="address-list clearfix">
+    <script>
+      var autourl = new Array()
+      autourl[0] = 'blr33888.com'
+      autourl[1] = 'blr33666.com'
+      autourl[2] = 'blr77666.com'
+      autourl[3] = 'blr55333.com'
+      autourl[4] = 'blr33000.com'
+      autourl[5] = 'blr99666.com'
+      autourl[6] = 'blr33444.com'
+      autourl[7] = 'blr88000.com'
+      autourl[8] = 'blr11777.com'
+      /*autourl[9] = "blr11222.com/m";
+      autourl[10] = "blr77111.com/myhot.php";*/
+
+
+      // function go(url) {
+      //     var _url = 'http://' + url + '.com';
+      //     window.open(_url);
+      // }
+
+      function go2 (i) {
+        var _url = 'https://' + autourl[i]
+        window.open(_url)
+      }
+
+      var address = function () {
+        $('.address-list').html('')
+        tim = 1
+        setInterval('tim++', 100)
+        b = 0
+
+        function butt () {
+          for (var i = 0; i < autourl.length; i++) {
+            if (i % 2 == 0) {
+              $('.address-list').append('<li><span class=\'times\'>' + (2 + Math.floor(Math.random() * 100)) + 'ms</span><p class=\'address\'>' + autourl[i] + '</p><a onClick=\'go2(' + i + ')\' id=\'url' + i + '\' class=\'btn\' target=\'_blank\'>直接打开</a></li>')
+              // $('#url' + i).click(function() {
+              //     var _url = 'http://' + autourl[i - 1];
+              //     window.open(_url);
+              // })
+            } else {
+              $('.address-list').append('<li class=\'even\'><span class=\'times\'>' + (2 + Math.floor(Math.random() * 100)) + 'ms</span><p class=\'address\'>' + autourl[i] + '</p><a onClick=\'go2(' + i + ')\' id=\'url' + i + '\' class=\'btn\' target=\'_blank\'>直接打开</a></li>')
+              // $('#url' + i).click(function() {
+              //     var _url = 'http://' + autourl[i - 1];
+              //     window.open(_url);
+              // })
+            }
+            console.log(autourl[i], i)
+          }
+        }
+
+        butt()
+
+        // function run() {
+        //     for (var i = 0; i < autourl.length; i++) {
+        //         $('.address-list').append("<img style='display:none;' src=http://" + autourl[i] + "/" + Math.random() + " width=1 height=1 onerror=auto('" + autourl[i] + "')>")
+        //     }
+        // }
+        // run();
+        // for (var j = 0; j < autourl.length; j++) {
+        //     $('.time:eq('+j+')').html(2+Math.floor(Math.random()*100)+ 'ms');
+        // }
+      }
+      $(function () {
+        address()
+      })
+
+      function auto (url) {
+        $('.address-list .address').eq(b).html(url)
+        $('.address-list a').eq(b).attr('href', 'https://' + url + '/')
+        if (tim > 200) {
+          $('.address-list .times').eq(b).html('链接超时')
+        } else {
+          $('.address-list .times').eq(b).html('' + tim * 10 + 'ms')
+        }
+        b++
+      }
+    </script>
+  </ul>
+
+  <ul class="link-list clearfix">
+    <li>
+      <a href="javascript:;" onclick="go2(0)">
+        <i class="iconfont icon-yemian"></i>
+        <p class="cn">官网首页</p>
+        <p class="en">Official web page</p>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://blr33888.com/static/blr/html/download/index.html">
+        <i class="iconfont icon-shouji"></i>
+        <p class="cn">手机投注</p>
+        <p class="en">Mobile Betting</p>
+      </a>
+    </li>
+
+    <li>
+      <a target="_blank" href="https://www.ub66.com/">
+        <i class="iconfont icon-xiazai"></i>
+        <p class="cn">资讯端下载</p>
+        <p class="en">Download</p>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://blr33888.com/#/home/agent">
+        <i class="iconfont icon-woshou"></i>
+        <p class="cn">代理加盟</p>
+        <p class="en">Promotions</p>
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="https://blr33888.com/#/home/youhui">
+        <i class="iconfont icon-liwu"></i>
+        <p class="cn">优惠活动</p>
+        <p class="en">Promotions</p>
+      </a>
+    </li>
+    <li class="last">
+      <a target="_blank"
+         href="https://ohmic.irxoo.com/chat/chatClient/chatbox.jsp?companyID=365044608&configID=217&jid=6210445234&s=1">
+        <i class="iconfont icon-kefu"></i>
+        <p class="cn">在线客服</p>
+        <p class="en">Online service</p>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="txt">
+      Cparisian Casino © 版权所有 2011-2019属于Las Vegas Sands拉斯维加斯金沙集团(中国)有限公司注册运营<br> 澳门巴黎人所提供的产品和服务，是由澳门特别行政区 The Macao
+      Special Administrative Region.授权和监管。选择我们，您将拥有可靠的资金保障和优质的服务。<br> Copyright © 澳门巴黎人 Reserved
+    </div>
+  </div>
+  <div class="footer-icon">
+  </div>
+</div>
+<div>
+  <object id="ClCache" click="sendMsg" host="" width="0" height="0">
+  </object>
+</div>
+<script>
+  $(function () {
+
+  })
+  // function test() {
+  //     for (var j = 0; j < 6; j++) {
+  //         $('.time:eq('+j+')').html(2+Math.floor(Math.random()*100)+ 'ms');
+  //     }
+  // };
+  // setTimeout("test()", 400);
+</script>
+</body>
+
+</html>

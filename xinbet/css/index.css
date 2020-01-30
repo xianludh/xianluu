@@ -1,0 +1,712 @@
+#app {
+  width: 100%;
+  height: 100%;
+}
+#app .banner {
+  width: 100%;
+  height: 498px;
+  margin: 0;
+  background: url('../img/banner.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#app .banner .header {
+  width: 100%;
+  height: 80px;
+  background-color: #00503B;
+}
+#app .banner .header .wrap {
+  width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+}
+#app .banner .header .wrap .logo_box {
+  flex: 1;
+  line-height: 50px;
+}
+#app .banner .header .wrap .logo_box a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#app .banner .header .wrap .logo_box a img {
+  margin-top: 20px;
+  width: 160px;
+}
+#app .banner .header .wrap .btn_box {
+  flex: 1;
+  position: relative;
+}
+#app .banner .header .wrap .btn_box ul {
+  position: absolute;
+  width: 270px;
+  right: 0;
+  height: 80px;
+}
+#app .banner .header .wrap .btn_box ul li {
+  float: right;
+  height: 80px;
+  line-height: 80px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+#app .banner .header .wrap .btn_box ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+}
+#app .banner .header .wrap .btn_box ul li a i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+#app .banner .header .wrap .btn_box ul li.search a i {
+  background: url('../img/icon_search.png') no-repeat;
+}
+#app .banner .header .wrap .btn_box ul li.search:hover a {
+  color: #ffba00;
+}
+#app .banner .header .wrap .btn_box ul li.search:hover a i {
+  background: url("../img/icon_search_hover.png") no-repeat;
+}
+#app .banner .header .wrap .btn_box ul li.online a i {
+  background: url('../img/icon_online.svg') no-repeat;
+  background-size: cover;
+}
+#app .banner .header .wrap .btn_box ul li.online:hover a {
+  /*color: #ffba00;*/
+}
+#app .banner .header .wrap .btn_box ul li.online:hover a i {
+  background: url('../img/icon_online_hover.svg') no-repeat;
+  background-size: cover;
+}
+#app .banner .banner-content {
+  width: 1200px;
+  height: 360px;
+  margin: 28px auto;
+  display: flex;
+  color: #fff;
+}
+#app .banner .banner-content .left {
+  width: 680px;
+  background: #004531;
+  opacity: .83;
+}
+#app .banner .banner-content .left .title {
+  margin: 20px auto 3px;
+  width: 100%;
+  height: 50px;
+}
+#app .banner .banner-content .left .title .btn {
+  width: 219px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+#app .banner .banner-content .left .title .btn a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #D79108;
+  line-height: 50px;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+#app .banner .banner-content .left .title .btn a img {
+  width: 30px;
+  height: 40px;
+  vertical-align: -10px;
+}
+#app .banner .banner-content .left .title .btn a span {
+  font-size: 26px;
+  color: #fff;
+}
+#app .banner .banner-content .left .link_box {
+  width: 664px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+#app .banner .banner-content .left .link_box ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#app .banner .banner-content .left .link_box ul li {
+  width: 148px;
+  height: 52px;
+  line-height: 52px;
+  margin: 8px;
+  border: 1px solid #027D5D;
+  cursor: pointer;
+  font-size: 14px;
+}
+#app .banner .banner-content .left .link_box ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#app .banner .banner-content .left .link_box ul li.cpw a i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background: url('../img/icon_home.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a u {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.ag u {
+  background: url('../img/icon_ag.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.bbin u {
+  background: url('../img/icon_bbin.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.bg u {
+  background: url('../img/icon_bg.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.dg u {
+  background: url('../img/icon_dg.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.kyqp u {
+  background: url('../img/icon_kyqp.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.vgqp u {
+  background: url('../img/icon_vgqp.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.agdz u {
+  background: url('../img/icon_agdz.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.mgdz u {
+  background: url('../img/icon_mgdz.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.ksssc u {
+  background: url('../img/icon_ksssc.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.kssc u {
+  background: url('../img/icon_kssc.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.klft u {
+  background: url('../img/icon_klft.svg') no-repeat;
+  background-size: 100% 100%;
+}
+#app .banner .banner-content .left .link_box ul li.toplay a.xgsm u {
+  background: url('../img/icon_xgsm.svg') no-repeat;
+  background-size: 100% 100%;
+}
+
+#app .banner .banner-content .left .link_box ul li:hover {
+  /*color: #f33939;*/
+  border-color: #011c10;
+}
+#app .banner .banner-content .left .link_box ul li:hover a {
+  /*color: #f33939;*/
+}
+#app .banner .banner-content .left .link_box ul li:hover a i {
+  /*background: url('../img/icon_home_hover.png') no-repeat;*/
+}
+#app .banner .banner-content .right {
+  width: 498px;
+  margin-left: 20px;
+}
+#app .banner .banner-content .right .lunbo {
+  width: 498px;
+  height: 218px;
+  overflow: hidden;
+  position: relative;
+}
+#app .banner .banner-content .right .lunbo .img_box {
+  width: 2490px;
+  height: 218px;
+  position: absolute;
+  left: 0;
+  display: flex;
+  transition: left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+#app .banner .banner-content .right .lunbo .img_box li {
+  flex: 1;
+}
+#app .banner .banner-content .right .lunbo .img_box li a {
+  display: block;
+}
+#app .banner .banner-content .right .lunbo .line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -3px;
+  width: 200px;
+  display: flex;
+}
+#app .banner .banner-content .right .lunbo .line li {
+  flex: 1;
+  cursor: pointer;
+  text-align: center;
+}
+#app .banner .banner-content .right .lunbo .line li i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#app .banner .banner-content .right .lunbo .line li:first-child i {
+  border-color: #fff;
+}
+#app .banner .banner-content .right .user_center {
+  width: 100%;
+  height: 142px;
+  background: url('../img/user_bg.png') no-repeat;
+}
+#app .banner .banner-content .right .user_center ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#app .banner .banner-content .right .user_center ul li {
+  width: 166px;
+  height: 70px;
+  text-align: center;
+}
+#app .banner .banner-content .right .user_center ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: #fff;
+}
+#app .banner .banner-content .right .user_center ul li a.signup {
+  overflow: hidden;
+  position: relative;
+}
+#app .banner .banner-content .right .user_center ul li a.signup ul {
+  width: 166px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  transition: all 0.22s ease-in-out;
+}
+#app .banner .banner-content .right .user_center ul li a.signup ul li {
+  width: 166px;
+  height: 70px;
+  display: flex;
+}
+#app .banner .banner-content .right .user_center ul li a.signup ul li .part1 {
+  width: 32px;
+  line-height: 70px;
+  margin-left: 20px;
+}
+#app .banner .banner-content .right .user_center ul li a.signup ul li .part1 img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+#app .banner .banner-content .right .user_center ul li a.signup ul li .part2 {
+  width: 80px;
+  margin-left: 5px;
+}
+#app .banner .banner-content .right .user_center ul li a.signup ul li .part2 .box {
+  width: 80px;
+  height: 42px;
+  vertical-align: middle;
+  margin: 15px auto;
+}
+#app .banner .banner-content .right .user_center ul li a.signup ul li .part2 .box .en_name {
+  color: #ddd;
+  font-size: 12px;
+}
+#app .banner .banner-content .right .user_center ul li a.signup ul li:last-child .part2 {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.signup ul li:last-child .part2 .en_name {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.signup:hover ul {
+  top: -70px;
+}
+#app .banner .banner-content .right .user_center ul li a.mobileapp {
+  overflow: hidden;
+  position: relative;
+}
+#app .banner .banner-content .right .user_center ul li a.mobileapp ul {
+  width: 166px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  transition: all 0.22s ease-in-out;
+}
+#app .banner .banner-content .right .user_center ul li a.mobileapp ul li {
+  width: 166px;
+  height: 70px;
+  display: flex;
+}
+#app .banner .banner-content .right .user_center ul li a.mobileapp ul li .part1 {
+  width: 32px;
+  line-height: 70px;
+  margin-left: 20px;
+}
+#app .banner .banner-content .right .user_center ul li a.mobileapp ul li .part1 img {
+  max-width: 150%;
+  width: 36px;
+  height: 28px;
+  vertical-align: middle;
+}
+#app .banner .banner-content .right .user_center ul li a.mobileapp ul li .part2 {
+  width: 80px;
+  margin-left: 5px;
+}
+#app .banner .banner-content .right .user_center ul li a.mobileapp ul li .part2 .box {
+  width: 80px;
+  height: 42px;
+  vertical-align: middle;
+  margin: 15px auto;
+}
+#app .banner .banner-content .right .user_center ul li a.mobileapp ul li .part2 .box .en_name {
+  color: #ddd;
+  font-size: 12px;
+}
+#app .banner .banner-content .right .user_center ul li a.mobileapp ul li:last-child .part2 {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.mobileapp ul li:last-child .part2 .en_name {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.mobileapp:hover ul {
+  top: -70px;
+}
+#app .banner .banner-content .right .user_center ul li a.promotion {
+  overflow: hidden;
+  position: relative;
+}
+#app .banner .banner-content .right .user_center ul li a.promotion ul {
+  width: 166px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  transition: all 0.22s ease-in-out;
+}
+#app .banner .banner-content .right .user_center ul li a.promotion ul li {
+  width: 166px;
+  height: 70px;
+  display: flex;
+}
+#app .banner .banner-content .right .user_center ul li a.promotion ul li .part1 {
+  width: 32px;
+  line-height: 70px;
+  margin-left: 20px;
+}
+#app .banner .banner-content .right .user_center ul li a.promotion ul li .part1 img {
+  width: 30px;
+  height: 32px;
+  vertical-align: middle;
+}
+#app .banner .banner-content .right .user_center ul li a.promotion ul li .part2 {
+  width: 80px;
+  margin-left: 5px;
+}
+#app .banner .banner-content .right .user_center ul li a.promotion ul li .part2 .box {
+  width: 80px;
+  height: 42px;
+  vertical-align: middle;
+  margin: 15px auto;
+}
+#app .banner .banner-content .right .user_center ul li a.promotion ul li .part2 .box .en_name {
+  color: #ddd;
+  font-size: 12px;
+}
+#app .banner .banner-content .right .user_center ul li a.promotion ul li:last-child .part2 {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.promotion ul li:last-child .part2 .en_name {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.promotion:hover ul {
+  top: -70px;
+}
+#app .banner .banner-content .right .user_center ul li a.agentment {
+  overflow: hidden;
+  position: relative;
+}
+#app .banner .banner-content .right .user_center ul li a.agentment ul {
+  width: 166px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  transition: all 0.22s ease-in-out;
+}
+#app .banner .banner-content .right .user_center ul li a.agentment ul li {
+  width: 166px;
+  height: 70px;
+  display: flex;
+}
+#app .banner .banner-content .right .user_center ul li a.agentment ul li .part1 {
+  width: 32px;
+  line-height: 70px;
+  margin-left: 20px;
+}
+#app .banner .banner-content .right .user_center ul li a.agentment ul li .part1 img {
+  width: 32px;
+  height: 24px;
+  vertical-align: middle;
+}
+#app .banner .banner-content .right .user_center ul li a.agentment ul li .part2 {
+  width: 80px;
+  margin-left: 5px;
+}
+#app .banner .banner-content .right .user_center ul li a.agentment ul li .part2 .box {
+  width: 80px;
+  height: 42px;
+  vertical-align: middle;
+  margin: 15px auto;
+}
+#app .banner .banner-content .right .user_center ul li a.agentment ul li .part2 .box .en_name {
+  color: #ddd;
+  font-size: 12px;
+}
+#app .banner .banner-content .right .user_center ul li a.agentment ul li:last-child .part2 {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.agentment ul li:last-child .part2 .en_name {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.agentment:hover ul {
+  top: -70px;
+}
+#app .banner .banner-content .right .user_center ul li a.freetrial {
+  overflow: hidden;
+  position: relative;
+}
+#app .banner .banner-content .right .user_center ul li a.freetrial ul {
+  width: 166px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  transition: all 0.22s ease-in-out;
+}
+#app .banner .banner-content .right .user_center ul li a.freetrial ul li {
+  width: 166px;
+  height: 70px;
+  display: flex;
+}
+#app .banner .banner-content .right .user_center ul li a.freetrial ul li .part1 {
+  width: 32px;
+  line-height: 70px;
+  margin-left: 20px;
+}
+#app .banner .banner-content .right .user_center ul li a.freetrial ul li .part1 img {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+#app .banner .banner-content .right .user_center ul li a.freetrial ul li .part2 {
+  width: 80px;
+  margin-left: 5px;
+}
+#app .banner .banner-content .right .user_center ul li a.freetrial ul li .part2 .box {
+  width: 80px;
+  height: 42px;
+  vertical-align: middle;
+  margin: 15px auto;
+}
+#app .banner .banner-content .right .user_center ul li a.freetrial ul li .part2 .box .en_name {
+  color: #ddd;
+  font-size: 12px;
+}
+#app .banner .banner-content .right .user_center ul li a.freetrial ul li:last-child .part2 {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.freetrial ul li:last-child .part2 .en_name {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.freetrial:hover ul {
+  top: -70px;
+}
+#app .banner .banner-content .right .user_center ul li a.onlineservice {
+  overflow: hidden;
+  position: relative;
+}
+#app .banner .banner-content .right .user_center ul li a.onlineservice ul {
+  width: 166px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  transition: all 0.22s ease-in-out;
+}
+#app .banner .banner-content .right .user_center ul li a.onlineservice ul li {
+  width: 166px;
+  height: 70px;
+  display: flex;
+}
+#app .banner .banner-content .right .user_center ul li a.onlineservice ul li .part1 {
+  width: 32px;
+  line-height: 70px;
+  margin-left: 20px;
+}
+#app .banner .banner-content .right .user_center ul li a.onlineservice ul li .part1 img {
+  width: 31px;
+  height: 32px;
+  vertical-align: middle;
+}
+#app .banner .banner-content .right .user_center ul li a.onlineservice ul li .part2 {
+  width: 80px;
+  margin-left: 5px;
+}
+#app .banner .banner-content .right .user_center ul li a.onlineservice ul li .part2 .box {
+  width: 80px;
+  height: 42px;
+  vertical-align: middle;
+  margin: 15px auto;
+}
+#app .banner .banner-content .right .user_center ul li a.onlineservice ul li .part2 .box .en_name {
+  color: #ddd;
+  font-size: 12px;
+}
+#app .banner .banner-content .right .user_center ul li a.onlineservice ul li:last-child .part2 {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.onlineservice ul li:last-child .part2 .en_name {
+  color: rgb(1, 28, 16);
+}
+#app .banner .banner-content .right .user_center ul li a.onlineservice:hover ul {
+  top: -70px;
+}
+#app .fastlink {
+  width: 100%;
+}
+#app .fastlink .title {
+  border-bottom: 1px solid #eee;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(105, 105, 105, 1);
+}
+#app .fastlink .bank_box {
+  width: 1200px;
+  margin: 10px auto;
+}
+#app .fastlink .bank_box .content {
+  height: 171px;
+}
+#app .fastlink .bank_box .content ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#app .fastlink .bank_box .content ul li {
+  margin-right: 15px;
+  height: 85px;
+  width: 225px;
+  text-align: center;
+}
+#app .fastlink .bank_box .content ul li:first-child {
+  margin-left: 0;
+  text-align: left;
+}
+#app .fastlink .bank_box .content ul li:nth-child(5) {
+  margin-left: 8px;
+  margin-right: 0;
+  text-align: right;
+}
+#app .fastlink .bank_box .content ul li:nth-child(6) {
+  margin-left: 0;
+  text-align: left;
+}
+#app .fastlink .bank_box .content ul li:nth-child(10) {
+  margin-left: 8px;
+  margin-right: 0;
+  text-align: right;
+}
+#app .fastlink .bank_box .content ul li a {
+  display: block;
+  height: 100%;
+  line-height: 85px;
+}
+#app .fastlink .bank_box .content ul li a img {
+  vertical-align: middle;
+}
+#app .fastlink .site_box {
+  width: 1200px;
+  margin: 0 auto;
+}
+#app .fastlink .site_box .content {
+  height: 50px;
+}
+#app .fastlink .site_box .content ul {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+#app .fastlink .site_box .content ul li {
+  flex: 1;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 10px;
+}
+#app .fastlink .site_box .content ul li:first-child {
+  text-align: left;
+}
+#app .fastlink .site_box .content ul li:last-child {
+  text-align: right;
+  margin-right: 0;
+}
+#app .fastlink .browser_box {
+  width: 1200px;
+  margin: 30px auto;
+}
+#app .fastlink .browser_box .content ul {
+  width: 800px;
+  height: 100%;
+  margin: 10px auto;
+  display: flex;
+}
+#app .fastlink .browser_box .content ul li {
+  flex: 1;
+  text-align: center;
+  line-height: 50px;
+}
+#app .fastlink .browser_box .content ul li a {
+  display: block;
+}
+#app .fastlink .browser_box .content ul li a img {
+  vertical-align: middle;
+}
+#app .fastlink .browser_box .content ul li a span {
+  margin-left: 15px;
+  font-size: 14px;
+  color: #9ea0a5;
+  transition: color .3s linear;
+}
+#app .fastlink .browser_box .content ul li:hover a span {
+  color: #011c10;
+}
+#app .footer {
+  margin: 20px auto;
+}
+#app .footer ul li {
+  text-align: center;
+  color: #9ea0a5;
+  font-size: 12px;
+}

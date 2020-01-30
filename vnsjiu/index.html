@@ -1,0 +1,353 @@
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+    <meta charset="UTF-8">    
+    <title>澳门威尼斯人</title>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+      if (/AppleWebKit.*Mobile/i.test(navigator.userAgent)
+        || /Android/i.test(navigator.userAgent)
+        || /BlackBerry/i.test(navigator.userAgent)
+        || /IEMobile/i.test(navigator.userAgent)
+        || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+        window.location.href = "./m/index.html";//要跳转的目录
+      }
+	</script>
+
+</head> 
+<style>
+	*{
+		margin:0;
+		padding: 0;
+	}
+	a {
+		text-decoration: none;
+	}
+  html,body{
+    margin: 0;
+    padding:0;
+  }
+  #header{
+    width: 100%;
+    background: #171717;
+    border-bottom: 1px solid #262626;
+  }
+  .head-item{
+    width: 1075px;
+    margin: 0 auto;
+    height: 132px;
+  }
+  .head-item a{
+  	background-size: contain;
+  	display: block;
+  }
+  .logo{
+    background: url('./pic/logo.png') no-repeat;
+    width: 300px;
+    height: 80px;
+    float: left;
+    margin-top: 26px;
+  }
+  .midlogo{
+  	background: url('./pic/slogan.png');
+  	float: left;
+  	width: 305px;
+  	height: 56px;
+  	margin-top: 50px;
+  	margin-left: 125px;
+  }
+  .rightlogo{
+  	background: url('./pic/24kefu.png');
+  	float: right;
+  	width: 210px;
+  	height: 50px;
+  	margin-top: 42px;
+  }
+  #mainbox{
+  	width: 100%;
+  	height: 1010px;
+  	background: red;
+  	background: url('./pic/bg.png')no-repeat;
+  	background-size:100% 100%;
+  	overflow: hidden;
+  }
+  .linetest{
+  	margin: 0 auto;
+  	height: 305px;
+  	width: 1075px;
+  	border:1px solid #262626;
+  	margin-top: 45px;
+  	padding: 10px;
+  	background: rgb(23, 24, 23);
+  }
+  .fastnav{
+		margin: 0 auto;
+  	height: 200px;
+  	width: 1075px;
+  	border:1px solid #262626;
+  	margin-top: 33px;
+  	padding: 10px;
+  	background: rgb(23, 24, 23);
+  }
+  .aboutus{
+		margin: 0 auto;
+  	height: 290px;
+  	width: 1000px;
+  	margin-top: 50px;
+  	background: url('./pic/paizhao.png')no-repeat;
+  	background-size:100% 100%;
+  }
+  #footer{
+  	height: 146px;
+  	width: 100%;
+  	border:1px solid #262626;
+  	background: #171717;
+  }
+	.footer-pic{
+		background:url('./pic/foooterimg.png') top center no-repeat;
+		height: 54px;
+		margin-top: 28px;
+	}
+	.copyright {
+    line-height: 32px;
+    color: #707070;
+    text-align: center;
+    font-size: 14px;	
+	}
+	.linehead,.navhead{
+		width: 100%;
+		font-size: 24px;
+		color: white;
+		font-weight: 500;
+		margin-top: 10px;
+		margin-left: 6px;
+	}
+	.line-box{
+		width: 100%;
+		margin-top: 20px;
+	}
+	.line-left{
+		width: 583px;
+		height: 244px;
+		display: inline-block;
+		margin-left: 6px;
+	}
+	.line-left div{
+		background-color: rgb(47, 48, 47);
+		width: 181px;
+		height: 109px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		float: left;
+		text-align: center;
+		cursor: pointer;
+	}
+	.line-left div .active{
+		color: rgb(255, 219, 107);
+	}
+	.line-right{
+		width: 474px;
+		height: 243px;
+		background: url('./pic/E.png')no-repeat;
+		display: inline-block;
+	}
+	.nav-box{
+		margin-top: 20px;
+	}
+	.kaihu,.youhui,.huanyu,.daili,.kefu{
+		width: 181px;
+		height: 110px;
+		background-color:rgb(47, 48, 47); 
+		margin-right: 32px;
+		float: left;
+	}
+	.nav-box img{
+		float: left;
+		margin-top: 43px;
+		margin-left: 23px;
+	}
+	.kaihu{
+		margin-left: 20px;
+	}
+	.kefu{
+		margin-right: 0!important;
+	}
+	.word-content{
+		float: left;
+		margin-left: 5px;
+		margin-top: 35px;
+		cursor: pointer;
+	}
+	.word-content .active{
+		color: rgb(255, 219, 107);
+	}
+	.word-top{
+		color: #fff;
+		font-weight: 500;
+		font-size: 19px;
+	}
+	.word-bottom{
+		font-size: 14px;
+		color:rgb(159, 160, 159);
+	}
+	.line-list{
+		font-size: 21px;
+		color: #fff;
+		margin-top: 30px;
+	}
+	.line-delay{
+		font-size: 17px;
+		color: #fff;
+	}
+</style>
+<body>    
+  <div id="header">
+    <div class="head-item">
+      <a href="javascript:;" class="logo"></a>
+      <a href="javascript:;" class="midlogo"></a>
+      <a href="https://humic.irxoo.com/chat/chatClient/chatbox.jsp?companyID=365044607&configID=252&jid=4634926440&s=1" target="_blank" class="rightlogo"></a>
+    </div>
+  </div>
+  <div id="mainbox">
+  	<div class="linetest">
+  		<div class="linehead">
+  			<img src="./pic/left.png" alt="">
+  			&nbsp;&nbsp;线路检测&nbsp;&nbsp;
+  			<img src="./pic/right.png" alt="">
+  		</div>
+  		<div class="line-box">
+  			<div class="line-left">
+  				<div class="line-content" onclick="go('vns8008')">
+  					<p class="line-list">南方线路①线</p>
+  					<p class="line-delay">1ms</p>
+  				</div>
+  				<div class="line-content" onclick="go('vns6006')">
+  					<p class="line-list">澳门线路②线</p>
+  					<p class="line-delay">1ms</p>
+  				</div>
+  				<div class="line-content" onclick="go('vns6006')">
+  					<p class="line-list">大陆线路③线</p>
+  					<p class="line-delay">1ms</p>
+  				</div>
+  				<div class="line-content" onclick="go('vns00ww')">
+  					<p class="line-list">北方线路④线</p>
+  					<p class="line-delay">1ms</p>
+  				</div>
+  				<div class="line-content" onclick="go('vns00pp')">
+  					<p class="line-list">澳门线路⑤线</p>
+  					<p class="line-delay">1ms</p>
+  				</div>
+  				<div class="line-content" onclick="go('vns00tt')">
+  					<p class="line-list">大陆线路⑥线</p>
+  					<p class="line-delay">1ms</p>
+  				</div>
+  			</div>
+  			<div class="line-right"></div>
+  		</div>
+  	</div>
+  	<div class="fastnav">
+  		<div class="navhead">
+  			<img src="./pic/left.png" alt="">
+  			&nbsp;&nbsp;快速导航&nbsp;&nbsp;
+  			<img src="./pic/right.png" alt="">
+  		</div>
+  		<div class="nav-box">
+  			<div class="kaihu">
+  				<img src="./pic/kaihu.png" alt="">
+  				<div class="word-content" onclick="go2('www.vns98877.com/?f=guangtouq')">
+  					<div class="word-top">免费开户</div>
+  					<div class="word-bottom">register</div>
+  				</div>
+  			</div>
+  			<div class="youhui">
+  				<img src="./pic/youhui.png" alt="">
+  				<div class="word-content" onclick="go2('vns38877.com')">
+  					<div class="word-top">最新优惠</div>
+  					<div class="word-bottom">preferential</div>
+  				</div>
+  			</div>
+  			<div class="daili">
+  				<img src="./pic/daili.png" alt="">
+  				<div class="word-content" onclick="go2('vns18877.com')">
+  					<div class="word-top">代理合作</div>
+  					<div class="word-bottom">proxy</div>
+  				</div>
+  			</div>
+  			<div class="huanyu">
+  				<img src="./pic/huanyu.png" alt="">
+  				<div class="word-content">
+					<a href="//ub66.com/?lang=zh-cn" target="_blank">
+					<div class="word-top">寰宇浏览器</div>
+  					<div class="word-bottom">universe browser</div>
+					</a>
+  				</div>
+  			</div>
+  			<div class="kefu">
+  				<img src="./pic/kefu.png" alt="">
+  				<div class="word-content">
+					<a href="https://humic.irxoo.com/chat/chatClient/chatbox.jsp?companyID=365044607&configID=252&jid=4634926440&s=1" target="_blank">
+  					<div class="word-top">在线客服</div>
+  					<div class="word-bottom">online service</div>
+				</a>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="aboutus"></div>
+  </div>
+  <div id="footer">
+  	<div class="footer-pic"></div>
+  	<div class="copyright">Copyright ©  澳门威尼斯人 Reserved   </div>
+  </div>
+</body>    
+<script>    
+	window.onload=function(){
+		let content=document.getElementsByClassName('line-content')
+		let word=document.getElementsByClassName('word-content')
+		function clear(){
+			for(let i=0;i<6;i++){
+				content[i].children[0].classList.remove("active")
+				content[i].children[1].classList.remove("active")
+			}
+		}
+		for(let i=0;i<6;i++){
+			content[i].onmouseover=function(){
+				clear()
+				this.children[0].classList.add("active")
+				this.children[1].classList.add("active")
+			}
+			content[i].onmouseout=function(){
+				clear()
+			}
+		}
+		function clearall(){
+			for(let i=0;i<5;i++){
+				word[i].children[0].classList.remove("active")
+				word[i].children[1].classList.remove("active")
+			}
+		}
+		for(let i=0;i<5;i++){
+			word[i].onmouseover=function(){
+				clearall()
+				this.children[0].classList.add("active")
+				this.children[1].classList.add("active")
+			}
+			word[i].onmouseout=function(){
+				clearall()
+			}
+		}
+	}
+</script>
+
+<script type="text/javascript">
+    function go(url){
+        var _url = 'http://'+url+'.com';
+        window.open(_url);
+    }
+    function go2(url){
+        var _url = 'http://'+url;
+        window.open(_url);
+    }
+</script>
+
+</html>  

@@ -1,0 +1,52 @@
+*{margin:0;padding:0;}
+.w1000{ width:1000px; margin:0 auto;}
+.clear{ clear:both;}
+a{ text-decoration:none;color:#fff; font-size:12px;}
+body{font-size:12px; font-family: "微软雅黑"; background: #172034 url(bg.jpg)/*tpa=http://www-1366.net/images/bg.jpg*/ top center no-repeat;}
+
+.header{background: url(headerbg.png)/*tpa=http://www-1366.net/images/headerbg.png*/ top center repeat-x; height: 94px;}
+
+.header .logo{background: url(logo.png)/*tpa=http://www-1366.net/images/logo.png*/ no-repeat; width:339px; height: 94px; display: block;float: left;}
+.header .dream{background: url(dream.png)/*tpa=http://www-1366.net/images/dream.png*/ no-repeat; height: 94px; width: 285px;float: right;}
+
+.con{height: 150px;}
+.con .leftimg{background: url(leftimg.png)/*tpa=http://www-1366.net/images/leftimg.png*/ no-repeat; width: 335px; height: 150px; float: left;}
+.con .rightimg{background: url(rightimg.png)/*tpa=http://www-1366.net/images/rightimg.png*/ no-repeat; width:354px; height:90px; float: right;}
+
+.link{ height: 400px; }
+.link ul li{float: left; width: 250px; height: 108px;background:rgba(27,39,66,0.5) url(linkbg.png)/*tpa=http://www-1366.net/images/linkbg.png*/ no-repeat; transition:all 0.3s; margin-bottom: 10px; position:relative}
+.link ul li a{ display: block;height: 108px; overflow: hidden; }
+.link ul li span{ width:62px; height: 63px; margin-left: 44px; display: block; margin-top: 23px; float: left; line-height: 63px; text-align: center; font-size: 44px; color: #fff; font-family: Impact; margin-right: 20px; }
+.link ul li h2{margin-top: 35px; line-height: 20px; color: #fff; font-size: 20px;}
+.link ul li p{line-height:12px;color: #729bf5;font-size: 14px; font-family: Arial; position:absolute; left:125px; top:65px; width:80px; text-align:center}
+.link ul li:hover{background:rgba(65,107,201,0.5)  url(linkbgon.png)/*tpa=http://www-1366.net/images/linkbgon.png*/ no-repeat;}
+.link ul li:hover h2{text-shadow:0 0 10px #609bff; color:#fff100}
+.link ul li:hover span{text-shadow:0 0 10px #609bff; color:#fff100}
+
+.item{background: url(itembg.jpg)/*tpa=http://www-1366.net/images/itembg.jpg*/ no-repeat; height: 102px;}
+.item ul li{float: left; width:166px; text-align: center; overflow: hidden; line-height: 42px;}
+.item ul li span{display: block;background: url(itemico.png)/*tpa=http://www-1366.net/images/itemico.png*/ no-repeat; height: 30px; margin: 0 auto; margin-top: 21px;transition: all 0.4s;}
+.item ul li a{color: #e8e9eb;font-size: 16px; transition: all 0.4s; height: 102px; display: block;overflow: hidden;}
+.item ul li span.ico01{background-position: 0 0; width: 36px;}
+.item ul li span.ico02{background-position: -172px 0; width: 28px;}
+.item ul li span.ico03{background-position: -336px 0; width: 39px;}
+.item ul li span.ico04{background-position: -504px 0; width: 37px;}
+.item ul li span.ico05{background-position: -676px 0; width: 29px;}
+.item ul li span.ico06{background-position: -844px 0; width: 33px;}
+.item ul li:hover a{ color: #fff100; }
+.item ul li:hover span.ico01{background-position: 0 -30px; width: 36px;}
+.item ul li:hover span.ico02{background-position: -172px -30px; width: 28px;}
+.item ul li:hover span.ico03{background-position: -336px -30px; width: 39px;}
+.item ul li:hover span.ico04{background-position: -504px -30px; width: 37px;}
+.item ul li:hover span.ico05{background-position: -676px -30px; width: 29px;}
+.item ul li:hover span.ico06{background-position: -844px -30px; width: 33px;}
+
+
+.about{background: url(aboutbg.png)/*tpa=http://www-1366.net/images/aboutbg.png*/ no-repeat; height: 372px; overflow: hidden;}
+.about .aboutcon{float: left; width: 310px; height: 100px; line-height: 24px; color: #8498c5; margin-top: 160px; margin-left: 23px;}
+.about .pinpaicon{float: right; margin-right:0px;  width: 326px; line-height: 33px;color: #8498c5; margin-top: 160px;}
+.about .pinpaicon span{margin-left:5px; color: #fff100; font-size: 18px; font-family: Arial; position:relative; top:2px;}
+
+.footer{height:135px; text-align: center; line-height: 36px;background:#0b0f1b;}
+.footer .footerimg{background:url(footerimg.png)/*tpa=http://www-1366.net/images/footerimg.png*/ top center no-repeat; height:84px;}
+.footer .copyright{text-align: center;color: #5e6f97;font-size: 12px;}

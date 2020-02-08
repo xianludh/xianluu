@@ -1,8 +1,8 @@
 html {
-	background: rgb(44, 24, 6); margin: 0px; padding: 0px; font-family: "Microsoft YaHei",Î¢ÈíÑÅºÚ,"Microsoft JhengHei";
+	background: rgb(44, 24, 6); margin: 0px; padding: 0px; font-family: "Microsoft YaHei",Î¢ï¿½ï¿½ï¿½Åºï¿½,"Microsoft JhengHei";
 }
 body {
-	background: rgb(44, 24, 6); margin: 0px; padding: 0px; font-family: "Microsoft YaHei",Î¢ÈíÑÅºÚ,"Microsoft JhengHei";
+	background: rgb(44, 24, 6); margin: 0px; padding: 0px; font-family: "Microsoft YaHei",Î¢ï¿½ï¿½ï¿½Åºï¿½,"Microsoft JhengHei";
 }
 * {
 	margin: 0px; padding: 0px;
@@ -38,7 +38,7 @@ li {
 	background-position: 88% 55px; width: 500px; height: 143px; float: right; display: block; background-repeat: no-repeat;
 }
 .top div .xl {
-	background-image: url("xl_top.png");
+	/*background-image: url("xl_top.png");*/
 }
 .top div .zn {
 	background-image: url("zn_top.gif");

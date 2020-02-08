@@ -33,7 +33,7 @@ body{ background:#402d19;font-family:Arial,Helvetica,sans-serif;}
 .testing .hd{height:1.2rem;line-height:1.2rem;margin-left:0.4rem; border-bottom: 1px solid #b98958;padding-right: 0.4rem}
 .testing .hd .lines{font-size:0.37rem;float:left;display:block;font-weight:normal;color: #eee25e}
 
-.testing .hd .qq{float: right;color: #eee25e;font-size:0.37rem;line-height: 1.3rem}
+.testing .hd .qq{float: left;color: #eee25e;font-size:0.37rem;line-height: 1.3rem}
 .testing .hd .qq b{font-weight: normal;color: #fff;}
 .testing .hd .qq span{display: block;background: url(../images/qq.png) no-repeat;float: left; width:0.48rem;background-size:cover; height:0.533333rem;margin-top:0.33rem;margin-right: 0.2rem}
 .testing .bd{padding-left:0;padding-right:0;padding-top:.4rem;padding-bottom:.4rem}

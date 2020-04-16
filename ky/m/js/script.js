@@ -28,72 +28,44 @@ b = GetQueryString('channelCode')
 
 if (b == null) {
   url = window.location.href
-  a = url + '?channelCode=201267&code=1'
+  a = url + '?channelCode=258141&code=1'
   window.location.href = a
 }
 
-/*function downApp() {
-	var ua = window.navigator.userAgent;
-	var isBaidu = ua.indexOf('baiduboxapp') !== -1;
-	if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
-		showXR()	
-		if (isBaidu) {
-            hideXR()
-			showBaiduT()
-		}else{
-			loading(function () {
-	        $('.loadingBox').css('display', 'none');
-	    }, 5000);
-      // window.location.href = 'itms-services:///?action=download-manifest&amp;url=https://raw.githubusercontent.com/buttCar/kjzb1/master/kyqp_xymj.plist'
-      openInstall.wakeupOrInstall();
+var certifySwiper = new Swiper('#certify .swiper-container', {
+  watchSlidesProgress: true,
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 4,
+  autoplay: false,
+  on: {
+    progress: function (progress) {
+      for (i = 0; i < this.slides.length; i++) {
+        var slide = this.slides.eq(i);
+        var slideProgress = this.slides[i].progress;
+        modify = 1;
+        if (Math.abs(slideProgress) > 1) {
+          modify = (Math.abs(slideProgress) - .7) * 0.4 + .6;
+        }
+        translate = slideProgress * modify * 17.33 + 'vw';
+        scale = 1 - Math.abs(slideProgress) / 9;
+        zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+        slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+        slide.css('zIndex', zIndex);
+        slide.css('opacity', 1);
+        if (Math.abs(slideProgress) > 3) {
+          slide.css('opacity', 0);
+        }
+      }
+    },
+    setTransition: function (transition) {
+      for (var i = 0; i < this.slides.length; i++) {
+        var slide = this.slides.eq(i)
+        slide.transition(transition);
+      }
+
     }
-	}else{
-		loading(function () {
-	        $('.loadingBox').css('display', 'none');
-	    }, 5000);
-    // window.location.href = '../apk/kyqp.apk'
-    openInstall.wakeupOrInstall();
-	}
-}*/
-
-// 安装中的文字进度
-/*function loading(callback, timeout) {
-    var index = 0;
-    var loadingState = ['.', '..', '...'];
-    var intervalId = setInterval(function () {
-        if (index > 2) {
-            index = 0;
-        }
-        
-        $('.loadingBox').css('display', 'block');
-        $('#download_btn').text('正在加载中，稍后请点击“安装”继续' + loadingState[index]);
-        index++
-    }, 500);
-
-    setTimeout(function () {
-        if (intervalId) {
-            clearInterval(intervalId);
-        }
-        if (callback) callback(); //回调
-    }, timeout || 7000);
-}
-function showXR(){
-	$('.trustBox').fadeIn()
-}
-function hideXR(){
-	$('.trustBox').hide()
-}
-function showBaiduT(){
-	$('#open_safari').fadeIn()
-}
-function hideBaiduT(){
-	$('#open_safari').hide()
-}
-$(function(){
-  if (browser.versions.ios || browser.versions.iPhone || browser.versions.iPad) {
-  	$('.trustBtn').show()
-  } else {
-  	$('.trustBtn').hide()
   }
-  
-})*/
+
+})

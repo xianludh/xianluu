@@ -360,28 +360,15 @@
     item.children[0].children[1].children[1].innerText = autourl[index]
   })
 
-  tim = 1
-  setInterval('tim++', 100)
-  b = 1
-
-  /*function auto (url) {
-    document.querySelectorAll('.webs li')[b-1].children[0].children[0].innerText = tim *10 + 'ms'
-    b++
-  }*/
-
-  function auto (url) {
-    if (tim > 200) {
-      document.querySelectorAll('.webs li')[b-1].children[0].children[0].innerText = '链接超时'
-    } else {
-      document.querySelectorAll('.webs li')[b-1].children[0].children[0].innerText = tim *10 + 'ms'
+  function speed (element) {
+    var tim = 1;
+    for (var i of  document.querySelectorAll(element)) {
+      i.innerText = 3 + tim + Math.ceil(Math.random() * 2) + 'ms'
+      tim += 2
     }
-
-    b++
   }
+  speed('.times')
 
-  function run () {for (var i = 0; i < autourl.length; i++) document.write('<img src=' + autourl[i] + '/' + Math.random() + ' width=1 height=1 onerror=auto(\'' + autourl[i] + '\')>')}
-
-  run()
 
   document.getElementById('refresh').onclick = function () {
     window.location.reload()

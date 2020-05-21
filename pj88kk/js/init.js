@@ -26,7 +26,7 @@ var url7 = 'www.pj88qq.com';
 var url_register = url1+'/?pageName=reg';
 
 // 在线客服链接
-var url_online = 'https://chatlink.mstatik.com/widget/standalone.html?eid=218883';
+var url_online = 'https://vue.livelyhelp.chat/chatWindow.aspx?siteId=5000705&planId=208#';
 
 // 快速登录链接1
 var url_login1 = 'www.pj00ee.com';

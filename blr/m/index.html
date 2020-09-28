@@ -1,169 +1,471 @@
-﻿<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>澳门巴黎人</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/xymf.css">
-    <script type="text/javascript" src="js/flexible.js"></script>
-    <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="js/xMarquee.js" type="text/javascript"></script>
-    <script>
-    $(function() {
-        $("#x1").xMarquee();
-    })
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>线路导航</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Microsoft YaHei", Arial, Verdana, SimSun, SimHei, STHeiti, Helvetica, sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .img {
+      width: 100%;
+      display: block;
+    }
+
+    img[onerror] {
+      display: none;
+    }
+
+    ul, li {
+      list-style: none;
+    }
+
+    body {
+      background-color: #01654d;
+    }
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 233.86vw;
+      margin: 0 auto;
+      /*padding-bottom: 7.33vw;*/
+      /*background-color: #086649;*/
+       background-image: url(./images/bg.png);
+       background-size: 100% 100%;
+      overflow: hidden;
+    }
+
+    .header {
+      /*width: 100vw;
+      height: 14vw;
+      background-image: url(./images/bg_header.png);
+      background-size: 100% 100%;
+      overflow: hidden;*/
+    }
+
+    .header .logo {
+      margin: 12.13vw auto 4.8vw;
+      width: 60.26vw;
+      height: 34.66vw;
+      background-image: url(./images/logo.png);
+      background-size: 100% 100%;
+    }
+/*.banner {
+  border-bottom:1px solid rgba(250,204,84,1);
+}*/
+    /*.title {
+      !*margin-top: 5.33vw;*!
+      !*margin-bottom: 5.33vw;*!
+      height: 14vw;
+      line-height: 14vw;
+      color: #FCF402;
+      font-size: 4.8vw;
+      text-align: center;
+    }
+
+    .tishi {
+      width: 90vw;
+      margin: 0 auto 5.86vw;
+      text-align: left;
+      font-size: 3vw;
+      color: #ffffff;
+    }
+
+    .tishi > span {
+      color: #FF2121;
+    }*/
+
+    .content {
+      position: relative;
+      width: 94.66vw;
+      height: 114.66vw;
+      margin: 0 auto 2vw;
+      background-image: url(./images/bg_webs.png);
+      background-size: 100% 100%;
+      overflow: hidden;
+    }
+
+
+   /* #refresh {
+      position: absolute;
+      top: 53px;
+      right: 66px;
+      width: 218px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background: rgba(0, 80, 59, 1);
+      border-radius: 18px;
+      font-size: 12px;
+      font-weight: bold;
+      color: rgba(255, 228, 24, 1);
+      !*cursor: pointer;*!
+    }*/
+
+    .webs {
+      overflow: hidden;
+      width: 89.06vw;
+      margin: 21.46vw auto 0;
+      /*margin-top: 21.46vw;*/
+      /*margin-bottom: 8vw;*/
+    }
+
+    .webs li {
+      width: 100%;
+      float: left;
+      color: #000000;
+      margin-bottom: 2.13vw;
+    }
+
+    .webs li:last-child {
+      margin-bottom: 4.4vw;
+    }
+
+    .webs li > span {
+      float: left;
+      font-size: 3.06vw;
+      display: block;
+      height: 6.66vw;
+      line-height: 6.66vw;
+      color: #FFE418;
+      text-align: center;
+    }
+
+    .webs li > span:nth-child(1) {
+      width: 21.33vw;
+      background-color: #00503B;
+    }
+    .webs li > .arrow {
+      width: 4.66vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .webs li > .arrow > span{
+      position: relative;
+      width: 2.26vw;
+      height: 2.93vw;
+      background-image: url(./images/arrow.png);
+      background-size: 100% 100%;
+    }
+
+    .webs li > span:nth-child(3) {
+      position: relative;
+      width: 37.33vw;
+      background-color: #00503B;
+    }
+
+    .webs li > span:nth-child(5) {
+      position: relative;
+      width: 20.33vw;
+      background-color: #00503B;
+    }
+
+    .webs li > span:nth-child(5) a {
+      display: block;
+      color: #FFE418;
+    }
+
+    #refresh {
+      width: 44.4vw;
+      height: 6.66vw;
+      margin: 0 auto;
+      line-height: 6.66vw;
+      border-radius: 3.33vw;
+      text-align: center;
+      font-size: 3.2vw;
+      background-color: #00503B;
+      color: #FFE418;
+
+    }
+
+    /*.webs li > span:nth-child(3) > span {
+      position: absolute;
+      top: 4vw;
+      display: block;
+      width: 0;
+      height: 0;
+      border-top: 2.93vw solid transparent;
+      border-left: 4vw solid #FFE418;
+      border-bottom: 2.93vw solid transparent;
+    }*/
+    .link {
+      width: 94.66vw;
+      height: 59.2vw;
+      background-image: url(./images/bg_services.png);
+      background-size: 100% 100%;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .links {
+      width: 91.53vw;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+    .links li {
+      overflow: hidden;
+      width: 28.93vw;
+      height: 8.26vw;
+      line-height: 8.26vw;
+      text-align: center;
+      font-size: 3.2vw;
+      font-weight: 500;
+      color: #FFFEF9;
+      border: 1px solid #E4E4E4;
+      margin-bottom: 1.46vw;
+      margin-right: 1.46vw;
+      float: left;
+    }
+
+    .links li a {
+      width: 100%;
+      height: 100%;
+      /*display: flex;*/
+      /*justify-content: center;*/
+      /*align-items: center;*/
+      /*background: rgba(255, 255, 255, 0.3);*/
+      /*border: 1px solid rgba(26, 105, 98, 1);*/
+      /*opacity:0.6;*/
+
+    }
+
+    .links li:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    .links li a > span.icon {
+      display: block;
+      width: 7.2vw;
+      height: 7.2vw;
+      margin-right: 4vw;
+      background-size: 100% 100%;
+    }
+
+    .links li:nth-child(1) > a span.icon {
+      background-image: url(./images/youhui.png);
+    }
+
+    .links li:nth-child(2) > a span.icon {
+      background-image: url(./images/zhuce.png);
+    }
+
+    .links li:nth-child(3) > a span.icon {
+      background-image: url(./images/agent.png);
+    }
+
+    .links li:nth-child(4) > a span.icon {
+      background-image: url(./images/service.png);
+    }
+
+    .service {
+      /*position: absolute;
+      left: 162px;
+      bottom: 106px;*/
+      display: block;
+      margin: 1vw auto 5.86vw;
+      width: 57.86vw;
+      height: 25.06vw;
+      background-image: url(./images/service.png);
+      background-size: 100% 100%;
+    }
+
+    .website {
+      position: absolute;
+      right: 162px;
+      bottom: 106px;
+      width: 396px;
+      height: 99px;
+      background-image: url(./images/website.png);
+    }
+
+    .con_title {
+      position: absolute;
+      top: 1081px;
+      left: 400px;
+      width: 99px;
+      height: 24px;
+      font-size: 24px;
+      font-weight: bold;
+      color: rgba(255, 228, 24, 1);
+    }
+
+    .con_txt {
+      position: absolute;
+      top: 1152px;
+      left: 430px;
+    }
+
+    .con_txt p {
+      position: relative;
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+
+    .con_txt p:before {
+      position: absolute;
+      top: 5px;
+      left: -40px;
+      display: block;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-image: url(./images/icon.png);
+    }
+
+
+  </style>
 </head>
-
 <body>
-    <!--[if lt IE 8]>
-            <p class="browserupgrade">
-                当前浏览器版本太低,建议升级道最新版本
-            </p>
-        <![endif]-->
-    <div class="header">
-        <a href="###" class="logo">
-            <img src="images/logo.png" alt="">
-        </a>
+<div class="container">
+  <div class="header">
+    <div class="logo"></div>
+  </div>
+  <!--<div class="banner">
+    <img class="img" src="./images/banner1.png" alt="">
+  </div>-->
+<!--  <p class="title">线路检测</p>-->
+<!--  <p class="tishi"><span>温馨提示：</span> ms数值越低访问速度越快</p>-->
+  <div class="content">
+    <ul class="webs">
+      <li>
+        <span class="times">10ms</span>
+        <span class="arrow"><span></span></span>
+        <span></span>
+        <span class="arrow"><span></span></span>
+        <span><a href="" target="_blank">打开链接</a></span>
+      </li>
+      <li>
+        <span class="times">10ms</span>
+        <span class="arrow"><span></span></span>
+        <span></span>
+        <span class="arrow"><span></span></span>
+        <span><a href="" target="_blank">打开链接</a></span>
+      </li>
+      <li>
+        <span class="times">10ms</span>
+        <span class="arrow"><span></span></span>
+        <span></span>
+        <span class="arrow"><span></span></span>
+        <span><a href="" target="_blank">打开链接</a></span>
+      </li>
+      <li>
+        <span class="times">10ms</span>
+        <span class="arrow"><span></span></span>
+        <span></span>
+        <span class="arrow"><span></span></span>
+        <span><a href="" target="_blank">打开链接</a></span>
+      </li>
+      <li>
+        <span class="times">10ms</span>
+        <span class="arrow"><span></span></span>
+        <span></span>
+        <span class="arrow"><span></span></span>
+        <span><a href="" target="_blank">打开链接</a></span>
+      </li>
+      <li>
+        <span class="times">10ms</span>
+        <span class="arrow"><span></span></span>
+        <span></span>
+        <span class="arrow"><span></span></span>
+        <span><a href="" target="_blank">打开链接</a></span>
+      </li>
+      <li>
+        <span class="times">10ms</span>
+        <span class="arrow"><span></span></span>
+        <span></span>
+        <span class="arrow"><span></span></span>
+        <span><a href="" target="_blank">打开链接</a></span>
+      </li>
+      <li>
+        <span class="times">10ms</span>
+        <span class="arrow"><span></span></span>
+        <span></span>
+        <span class="arrow"><span></span></span>
+        <span><a href="" target="_blank">打开链接</a></span>
+      </li>
+      <li>
+        <span class="times">10ms</span>
+        <span class="arrow"><span></span></span>
+        <span></span>
+        <span class="arrow"><span></span></span>
+        <span><a href="" target="_blank">打开链接</a></span>
+      </li>
+    </ul>
+    <div id="refresh">
+      点击重新检测
     </div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="" title=""><img src="images/banner1.jpg"></a>
-            </div>
-            <div class="swiper-slide">
-                <a href="" title=""><img src="images/banner2.jpg"></a>
-            </div>
-            
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-    <script src="js/swiper.min.js"></script>
-    <script type="text/javascript">
-    var mySwiper = new Swiper('.swiper-container', {
-        loop: true,
-        autoplay: 3000,
-        pagination : '.swiper-pagination'
-    });
-    </script>
-    <div class="testing">
-        <div class="hd">
-            <div class="lines">
-                <span>
-                    </span> 线路检测：36600.com
-            </div>
-            <div class="qq">
-                <b>
-                         ms数值越低访问速度越快
+  </div>
+  <div class="link">
+    <a class="service" href="https://vue.livelyhelp.chat/chatWindow.aspx?siteId=5000769&planId=273#"
+       target="_blank"></a>
+    <!--<li><a href="https://bb365b.com/m/#/activity" target="_blank"><span class="icon"></span><span>优惠大厅</span></a></li>
+    <li><a href="https://bb365b.com/m/#/admin/register" target="_blank"><span class="icon"></span><span>免费注册</span></a>
+    </li>
+    <li><a href="https://bb365b.com/m/#/agent-doc" target="_blank"><span class="icon"></span><span>代理合作</span></a></li>
+    <li></li>-->
+    <ul class="links">
+      <li><a href="https://bb365b.com/m/#/home/game/10042" target="_blank">开元棋牌</a></li>
+      <li><a href="https://bb365b.com/m/#/admin/login" target="_blank">手机登入</a></li>
+      <li><a href="https://bb365b.com/m/#/admin/register" target="_blank">立即注册</a></li>
+      <li><a href="https://bb365b.com/m/#/activity" target="_blank">优惠活动</a></li>
+      <li><a href="https://bb365b.com/m/#/home/game/10024" target="_blank">PT老虎机</a></li>
+      <li><a href="https://bb365b.com/m/#/home/type/10005" target="_blank">AG捕鱼王</a></li>
 
-                    </b>
-            </div>
-        </div>
-        <div class="bd">
-            <ul class="speedlist">
-                <li>
-                    <span class="btn-open">
-                            <a onclick="go2('b4177.com')" class="png24">
-                                进入游戏
-                            </a>
-                        </span>
-                    <span class="ms" id="sudu1">
-                            检测中
-                        </span>
-                    <span class="url">
-                            b4177.com
+    </ul>
+  </div>
+  <!--<div class="service">
+    <a href="https://vue.livelyhelp.chat/chatWindow.aspx?siteId=5000769&planId=273#"
+       target="_blank" style="display: block;width: 100%;height: 100%;"></a></div>-->
+  <!--<div class="con_title">温馨提示</div>
+  <div class="con_txt">
+    <p>反应时间越小，打开就越快</p>
+    <p>如果我们的检测中心对您有帮助，请按 Ctrl+D 收藏： www.b992.com</p>
+    <p>如果检测后还不能登录请按以下操作方式：<br><br>
+      操作步骤：打开IE浏览器：选择：工具-》Internet选项-》 再选择（删除历史浏览记录）-》删除-》重启IE</p>
+  </div>-->
+</div>
+<script>
+  var autourl = new Array()
+  autourl[0] = 'https://bb365t.com'
+  autourl[1] = 'https://bb365b.com'
+  autourl[2] = 'https://bb365c.com'
+  autourl[3] = 'https://bb365g.com'
+  autourl[4] = 'https://bb365e.com'
+  autourl[5] = 'https://bb365f.com'
+  autourl[6] = 'https://bb365o.com'
+  autourl[7] = 'https://bb365m.com'
+  autourl[8] = 'https://bb365u.com'
 
-                        </span>
-                </li>
-                <li>
-                    <span class="btn-open">
-                            <a onclick="go2('b4200.com')" class="png24">
-                                进入游戏
-                            </a>
-                      </span>
-                    <span class="ms" id="sudu2">
-                            检测中
-                        </span>
-                    <span class="url">
-                            b4200.com
+  document.querySelectorAll('.webs li').forEach(function (item, index) {
+    item.children[4].children[0].href = autourl[index]
+    item.children[2].innerText = autourl[index]
+  })
 
-                        </span>
-                </li>
-                <li>
-                    <span class="btn-open">
-                            <a onclick="go2('b4022.com')" class="png24">
-                                进入游戏
-                            </a>
-                      </span>
-                    <span class="ms" id="sudu3">
-                            检测中
-                        </span>
-                    <span class="url">
-                            b4022.com
-
-                        </span>
-                </li>
-                <li>
-                    <span class="btn-open">
-                            <a onclick="go2('b4266.com')" class="png24">
-                                进入游戏
-                            </a>
-                        </span>
-                    <span class="ms" id="sudu4">
-                            检测中
-                        </span>
-                    <span class="url">
-                            b4266.com
-
-                        </span>
-                </li>
-                <li>
-                    <span class="btn-open">
-                            <a onclick="go2('b3349.com')" class="png24">
-                                进入游戏
-                            </a>
-                        </span>
-                    <span class="ms" id="sudu5">
-                            检测中
-                        </span>
-                    <span class="url">
-                            b3349.com
-
-                        </span>
-                </li>
-                 <li>
-                    <span class="btn-open">
-                            <a onclick="go2('b4133.com')" class="png24">
-                                进入游戏
-                            </a>
-                        </span>
-                    <span class="ms" id="sudu6">
-                            检测中
-                        </span>
-                    <span class="url">
-                            b4133.com
-
-                        </span>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <script type="text/javascript">
-    function go(url){
-        var _url = 'http://'+url+'.com';
-        window.open(_url);
+  function speed (element) {
+    var tim = 1;
+    for (var i of  document.querySelectorAll(element)) {
+      i.innerText = 3 + tim + Math.ceil(Math.random() * 2) + 'ms'
+      tim += 2
     }
-    function go2(url){
-        var _url = 'http://'+url;
-        window.open(_url);
-    }
-    </script>
-    <script src="js/zepto.min.js"></script>
-    <script src="js/speed.js"></script>
-    <script src="js/action.js"></script>
+  }
+  speed('.times')
+
+   document.getElementById('refresh').onclick = function () {
+     window.location.reload()
+   }
+</script>
 </body>
-
 </html>

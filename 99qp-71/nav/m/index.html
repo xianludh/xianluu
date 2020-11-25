@@ -105,9 +105,9 @@
             <div class="swiper-slide">
                 <img src="./images/banner4.png">
             </div>
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
                 <img src="./images/banner5.png">
-            </div>
+            </div> -->
             <div class="swiper-slide">
                 <img src="./images/banner6.png">
             </div>
@@ -128,8 +128,8 @@
     </script>
     </div>
     <!-- <div class="gg"> 
-        <span class="zx" style="color:#FEFE00;width: 2.8rem;"><img class="tip" src='images/tip1.png' />&nbsp;公告</span>
-        <marquee  direction="left" id="marquee" scrolldelay='50'>
+        <span class="zx" style="color:#FEFE00;width: 2.8rem;"><img class="tip" src='images/tip1.png' />&nbsp;最新消息</span>
+        <marquee  direction="left" id="marquee" scrolldelay='350'>
             欢迎莅临金沙娱乐场【J69.com】我们秉承“服务至上，客户第一”的经营理念！竭诚为每一位玩家提供专业、高效、优质的服务！以诚信树立品牌，良心铸就经典，看得到的贴心，领得到的实惠，邀请您的朋友一起加入我们吧！
         </marquee>
     </div> -->
@@ -208,7 +208,7 @@
             </a>
         </li>
         <li>
-            <a href="https://j10002.com/m/#/user/JieBeiCenter" target="_blank">
+            <a href="https://j10002.com/m/#/admin/login" target="_blank">
                 <img src='images/9a.png' /><span>免息借呗</span>
             </a>
         </li>
@@ -218,7 +218,7 @@
             </a>
         </li>
         <li>
-            <a href="https://j10002.com/m/#/activity" target="_blank">
+            <a href="https://j10002.com/m/#/download" target="_blank">
                 <img src='images/6a.png' /><span>APP下载</span>
             </a>
         </li>
@@ -293,11 +293,8 @@
             var speed=30;//数值越大，速度越慢
         
             var demo2=document.getElementById("demo2");
-        
             var demo1=document.getElementById("demo1");
-        
             var demo=document.getElementById("demo");
-        
             function MarqueeLeft(){ 
                 if(demo2.offsetWidth-demo.scrollLeft<=0){
                     demo.scrollLeft-=demo1.offsetWidth 
@@ -305,7 +302,8 @@
                     demo.scrollLeft++ 
                 } 
             }
-            var MyMar=setInterval(MarqueeLeft,speed); demo.onmouseover=function() {clearInterval(MyMar);} 
+            var MyMar=setInterval(MarqueeLeft,speed);
+            //  demo.onmouseover=function() {clearInterval(MyMar);} 
             demo.onmouseout=function() {MyMar=setInterval(MarqueeLeft,speed);} 
         }
     </script>

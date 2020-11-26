@@ -184,6 +184,13 @@
                       for (var i = 0; i < autourl.length; i++) {
                         if (i % 2 == 0) {
                           $('.address-list').append('<li><div><p class=\'text\'>' + '高速线路'+ (Number(i)+1)  + '</p><p class=\'address\'>'+ autourl[i] + '/' + '</p><span class=\'times\'>' + (2 + Math.floor(Math.random() * 100)) + 'ms</span></div><a onClick=\'go2(' + i + ')\' id=\'url' + i + '\' class=\'btn\' target=\'_blank\'>点击访问</a></li>')
+                          setTimeout(function() {
+                                var tim = 1;
+                                for (var i of  document.querySelectorAll(element)) {
+                                i.innerText = 3 + tim + Math.ceil(Math.random() * 2) + 'ms'
+                                tim += 2
+                                }   
+                            }, 500);
                           // $('#url' + i).click(function() {
                           //     var _url = 'http://' + autourl[i - 1];
                           //     window.open(_url);

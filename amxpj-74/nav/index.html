@@ -78,15 +78,7 @@
                 <p class="title">热门游戏</p>
                 <ul>
                     <li>
-                        <div class="box clearfix">
-                            <div class="box-img fl">
-                                <img src="./images/mg_icon.png" alt="" />
-                            </div>
-                            <a href="https://x1159.com/#/home/slot?navid=9&id=10022" target="_blank" class="box-text fl">
-                                <h1>MG电子</h1>
-                                <span>游戏最多全</span>
-                            </a>
-                        </div>
+                       
                         <div class="box clearfix">
                             <div class="box-img fl">
                                 <img src="./images/th_icon.png" alt="" />
@@ -96,9 +88,6 @@
                                 <span>万人在线 pk</span>
                             </a>
                         </div>
-                    </li>
-                    
-                    <li>
                         <div class="box clearfix">
                             <div class="box-img fl">
                                 <img src="./images/ky_icon.png" alt="" />
@@ -108,6 +97,19 @@
                                 <span>最火棋牌游戏</span>
                             </a>
                         </div>
+                    </li>
+                    
+                    <li>
+                        <div class="box clearfix">
+                            <div class="box-img fl">
+                                <img src="./images/mg_icon.png" alt="" />
+                            </div>
+                            <a href="https://x1159.com/#/home/slot?navid=9&id=10022" target="_blank" class="box-text fl">
+                                <h1>MG电子</h1>
+                                <span>游戏最多全</span>
+                            </a>
+                        </div>
+                        
                         <div class="box clearfix">
                             <div class="box-img fl">
                                 <img src="./images/bg_icon.png" alt="" />
@@ -187,7 +189,7 @@
                           $('.address-list').append('<li><div><p class=\'text\'>' + '高速线路'+ (Number(i)+1)  + '</p><p class=\'address\'>'+ autourl[i] + '/' + '</p><span class=\'times\'>' + '检测中' + '</span></div><a onClick=\'go2(' + i + ')\' id=\'url' + i + '\' class=\'btn\' target=\'_blank\'>点击访问</a></li>')
                           setTimeout(function() {
                                 var tim = 1;
-                                for (var i of  document.querySelectorAll(element)) {
+                                for (var i of  document.querySelectorAll('.times')) {
                                 i.innerText = 3 + tim + Math.ceil(Math.random() * 2) + 'ms'
                                 tim += 2
                                 }   

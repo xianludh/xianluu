@@ -202,14 +202,15 @@ background: #A50004;
   width:100%;
   height: 5rem;
   background-size: 100% 100%;
-  padding:1.2rem 0.1rem 0 0.1rem;
+  padding-top:1.2rem;
   box-sizing: border-box;
 }
 .content .often table {
+  width: 100%;
   border-collapse:collapse;
 }
 .content .often table tr td {
-  width:2.4325rem;
+  width:25%;
   height: 1.8rem;
   background: #1D1D1D;
   text-align: center;

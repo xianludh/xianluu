@@ -4,6 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="renderer" content="webkit|ie-comp|ie-stand">
+  <link rel="stylesheet icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
   <script src="m/js/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
@@ -242,19 +243,25 @@
                     function butt () {
                       for (var i = 0; i < autourl.length; i++) {
                         if (i % 2 == 0) {
-                          $('.address-list').append('<li><p class=\'address\'>' + '澳门威尼斯 '+ (Number(i)+1) + '站' + '</p><span class=\'times\'>' + (2 + Math.floor(Math.random() * 100)) + 'ms</span><a onClick=\'go2(' + i + ')\' id=\'url' + i + '\' class=\'btn\' target=\'_blank\'></a></li>')
-                          // $('#url' + i).click(function() {
-                          //     var _url = 'http://' + autourl[i - 1];
-                          //     window.open(_url);
-                          // })
+                          $('.address-list').append('<li><p class=\'address\'>' + '澳门威尼斯 '+ (Number(i)+1) + '站' + '</p><span class=\'times\'>' + '检测中' + '</span><a onClick=\'go2(' + i + ')\' id=\'url' + i + '\' class=\'btn\' target=\'_blank\'></a></li>')
+                          setTimeout(function(){
+                                var tim = 1;
+                                for (var i of  document.querySelectorAll('.times')) {
+                                i.innerText = 3 + tim + Math.ceil(Math.random() * 2) + 'ms'
+                                tim += 2
+                                }
+                            },500)
                         } else {
-                          $('.address-list').append('<li><p class=\'address\'>' + '澳门威尼斯 '+ (Number(i)+1) + '站' + '</p><span class=\'times\'>' + (2 + Math.floor(Math.random() * 100)) + 'ms</span><a onClick=\'go2(' + i + ')\' id=\'url' + i + '\' class=\'btn\' target=\'_blank\'></a></li>')
-                          // $('#url' + i).click(function() {
-                          //     var _url = 'http://' + autourl[i - 1];
-                          //     window.open(_url);
-                          // })
+                          $('.address-list').append('<li><p class=\'address\'>' + '澳门威尼斯 '+ (Number(i)+1) + '站' + '</p><span class=\'times\'>' + '检测中' + '</span><a onClick=\'go2(' + i + ')\' id=\'url' + i + '\' class=\'btn\' target=\'_blank\'></a></li>')
+                          setTimeout(function(){
+                                var tim = 1;
+                                for (var i of  document.querySelectorAll('.times')) {
+                                i.innerText = 3 + tim + Math.ceil(Math.random() * 2) + 'ms'
+                                tim += 2
+                                }
+                            },500)
                         }
-                        console.log(autourl[i], i)
+                        //console.log(autourl[i], i)
                       }
                     }
             

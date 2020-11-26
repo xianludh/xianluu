@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="js/flexible.js"></script>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/txtscroll.js"></script>
     <style>
 	.swiper-container {
       width: 100%;
@@ -36,6 +37,7 @@
       -webkit-align-items: center;
       align-items: center;
       transform: scale(0.9);
+      
     }
     .swiper-slide-active,.swiper-slide-duplicate-active{
       transform: scale(1.1);
@@ -47,6 +49,7 @@
     .swiper-slide img{
         width:5.2rem;
         height: 2.2rem;
+        transform:translate3d(0,0,0)
     }
 			.header{
 				background-color: #000000;
@@ -122,27 +125,25 @@
                 width: 4.67rem;
                 height: 1.07rem;
             }
-            .box {width: 100%;height:2.4rem;transform-style: perserve-3d; margin: 0 auto; position: relative;top:6%;overflow: hidden;}
-            .box img{width:5.2rem;height: 2.2rem; position: absolute; top: 0.1rem; transition:all .3s linear;}
-            
-            .box:hover .btn{opacity: 1;}
-        
-            .front {left: -2rem;transform: scale(0.8);}
-            .back {left: 6rem;transform: scale(0.8);}   
-            .active {left: 2.4rem; transform: scale(1); z-index: 10;}
-            #demo {
-                width:8rem;
-                margin: 0 auto;
-                height: 0.7rem;
-                line-height: 0.7rem;
-                font-size: 0.32rem;
-                font-weight: 500;
-                color: #FFFFFF;
-                overflow:hidden;
-                white-space:nowrap;
-                float: left;
-                margin-left:-0.1rem
+            .txt-scroll {
+            width: 7.5rem;
+            height: 0.8rem;
+            line-height: 0.8rem;
             }
+            .scrollbox {
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    transition: all .2s;
+            }
+            .scrollbox .txt, .scrollbox .txt-clone {
+                display: inline;
+                position: relative;
+                color: #fff;
+                font-size: 0.32rem;
+            }
+         
+            
         
       </style>
    
@@ -167,10 +168,14 @@
             <div class="lines">
                 <span></span> 最新消息：
             </div>
-            <div id="demo">
-                <div id="demo1">ms数值越低访问速度越快&nbsp;&nbsp;&nbsp; ms数值越低访问速度越快&nbsp;&nbsp;&nbsp;ms数值越低访问速度越快&nbsp;&nbsp;&nbsp;ms数值越低访问速度越快&nbsp;&nbsp;&nbsp;ms数值越低访问速度越快
+            <div class="txt-scroll txt-scroll-default">
+                <div class="scrollbox">
+                    <div class="txt">
+                        ms数值越低访问速度越快&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ms数值越低访问速度越快 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ms数值越低访问速度越快 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ms数值越低访问速度越快 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                    <div class="txt-clone">
+                    </div>
                 </div>
-                <div id="demo2"></div>
             </div>
         </div>
         <div class="banner">
@@ -327,10 +332,25 @@
     </div> -->
   </div>
   <script>
+      window.onload = function () {
+          let speeds;
+        var u = navigator.userAgent;
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+        if(isiOS){
+            speeds = 8;
+        }else if(isAndroid){
+           speeds = 25
+        }
+	  	$('.txt-scroll-default').txtscroll({
+	  			'speed': speeds
+	  		  });
+	  };
+
     var swiper = new Swiper('.swiper-container', {
       watchSlidesProgress: true,
       slidesPerView: 3,
-      spaceBetween: -30,
+      spaceBetween: 50,
 	  centeredSlides: true,
       loop: true,
       autoplay:{
@@ -370,25 +390,8 @@
         speed('.ms');
     } 
 
-    //文字左滚动
-			var speed1=25;//数值越大，速度越慢
-
-            var demo2=document.getElementById("demo2");
-
-            var demo1=document.getElementById("demo1");
-
-            var demo=document.getElementById("demo");
-
-            function MarqueeLeft(){ 
-                if(demo2.offsetWidth-demo.scrollLeft<=0){
-                    demo.scrollLeft-=demo1.offsetWidth 
-                }else{ 
-                    demo.scrollLeft++ 
-                } 
-            }
-            var MyMar=setInterval(MarqueeLeft,speed1); demo.onmouseover=function() {clearInterval(MyMar);} 
-            demo.onmouseout=function() {MyMar=setInterval(MarqueeLeft,speed1);} 
-            document.getElementById('app').onclick= function(){
+    
+    document.getElementById('app').onclick= function(){
                 var u = navigator.userAgent;
                 var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
                 var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
@@ -397,9 +400,12 @@
                 }else if(isAndroid){
                     window.open("https://k86780.com/m/#/admin/login",'_blank');
                 }
-            }
+    }
   </script>
 
+  <script>
+    
+  </script>
 
 </body>
 

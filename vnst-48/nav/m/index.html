@@ -82,10 +82,7 @@
                 <span class="ms" id="sudu1">检测中</span>
                 <span class="lj"><img src="./images/lj_icon.png" alt=""></span>
                 <span class="url">
-                    <p>
-                        <img src="./images/dq.png" alt="">
-                        https://vns8033.com
-                    </p>
+                     <img src="./images/dq.png" alt=""><span></span>
                 </span>
                 <span class="jt"><img src="./images/jt_icon.png" alt=""></span>
                 <span class="btn-open">
@@ -96,10 +93,7 @@
                 <span class="ms" id="sudu2">检测中</span>
                 <span class="lj"><img src="./images/lj_icon.png" alt=""></span>
                 <span class="url">
-                    <p>
-                        <img src="./images/dq.png" alt="">
-                        https://vns4004.com
-                    </p>
+                        <img src="./images/dq.png" alt=""><span></span>
                 </span>
                 <span class="jt"><img src="./images/jt_icon.png" alt=""></span>
                 <span class="btn-open">
@@ -110,10 +104,7 @@
                 <span class="ms" id="sudu3">检测中</span>
                 <span class="lj"><img src="./images/lj_icon.png" alt=""></span>
                 <span class="url">
-                    <p>
-                        <img src="./images/dq.png" alt="">
-                        https://vns2002.com
-                    </p>
+                        <img src="./images/dq.png" alt=""><span></span>
                 </span>
                 <span class="jt"><img src="./images/jt_icon.png" alt=""></span>
                 <span class="btn-open">
@@ -124,10 +115,7 @@
                 <span class="ms" id="sudu4">检测中</span>
                 <span class="lj"><img src="./images/lj_icon.png" alt=""></span>
                 <span class="url">
-                    <p>
-                        <img src="./images/dq.png" alt="">
-                        http://vns8008.com
-                    </p>
+                        <img src="./images/dq.png" alt=""><span></span>
                 </span>
                 <span class="jt"><img src="./images/jt_icon.png" alt=""></span>
                 <span class="btn-open">
@@ -138,10 +126,7 @@
                 <span class="ms" id="sudu5">检测中</span>
                 <span class="lj"><img src="./images/lj_icon.png" alt=""></span>
                 <span class="url">
-                    <p>
-                        <img src="./images/dq.png" alt="">
-                        https://vns00zz.com
-                    </p>
+                        <img src="./images/dq.png" alt=""><span></span>
                 </span>
                 <span class="jt"><img src="./images/jt_icon.png" alt=""></span>
                 <span class="btn-open">
@@ -291,7 +276,12 @@
     autourl[3] = 'http://vns8008.com'
     autourl[4] = 'http://vns00zz.com'
 
-  function speed (element) {
+    document.querySelectorAll('.speedlist li').forEach(function (item, index) {
+        item.children[4].children[0].href = autourl[index]
+         item.children[2].children[1].innerText ='www.' + autourl[index].split('//')[1]
+    })
+
+    function speed (element) {
         for (var i of  document.querySelectorAll(element)) {
             i.innerText ='检测中'
         }  

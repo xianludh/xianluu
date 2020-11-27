@@ -55,12 +55,16 @@ body{ background:#fff;font-family:Arial,Helvetica,sans-serif;}
   height: 0.3rem;
 }
 .content .bk ul{
+  width:100%;
   padding-left:0.26rem;
   padding-right:0.26rem;
-  margin-top:0.4rem;
+  margin:0 auto;
+  box-sizing: border-box;
 }
 .content .bk li{
   margin-bottom:.3rem;
+  display: flex;
+  justify-content: space-between  ;
 }
 .content .bk li span {
   float: left;
@@ -70,7 +74,7 @@ body{ background:#fff;font-family:Arial,Helvetica,sans-serif;}
   font-size:0.34rem;
   height:.78rem;
   line-height:.78rem;
-  width:1.55rem;
+  width:1.3rem;
   text-align:center;
   white-space:nowrap;
   overflow:hidden;
@@ -89,12 +93,12 @@ body{ background:#fff;font-family:Arial,Helvetica,sans-serif;}
   height: 0.24rem;
 }
 .content .bk .url{
-  width: 4.91rem;
+  width: 5.2rem;
   height: 0.78rem;
   background: #303030;
   line-height: 0.78rem;
   border-radius: 10px;
-  font-size: 0.34rem;
+  font-size: 0.36rem;
   font-family: Microsoft YaHei;
   font-weight: 400;
   color: #fff;
@@ -130,6 +134,7 @@ background: #A50004;
 }
 .content .bk .btn-open span{
   color: #fff;
+  font-size:0.34rem;
 }
 .content .bk .reCheck {
   display: block;

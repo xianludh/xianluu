@@ -33,8 +33,8 @@ body{ background:#fff;font-family:Arial,Helvetica,sans-serif;}
   font-family: PingFang SC;
   font-weight: 500;
   color: #F8BE83;
-}
-.content .hd .lines span{
+  }
+  .content .hd .lines span{
   display: inline-block;
   width:0.41rem;
   height: 0.4rem;
@@ -56,11 +56,16 @@ body{ background:#fff;font-family:Arial,Helvetica,sans-serif;}
   height: 2.17rem;
 }
 .content .bd ul{
+  width:100%;
   padding-left:.3rem;
   padding-right:.3rem;
+  margin:0 auto;
+  box-sizing: border-box;
 }
 .content .bd li{
   margin-bottom:.4rem;
+  display: flex;
+  justify-content: space-between;
 }
 .content .bd li span {
   float: left;
@@ -146,6 +151,7 @@ body{ background:#fff;font-family:Arial,Helvetica,sans-serif;}
   background-size:100% 100%;
 }
 .content .often table {
+  width:100%;
   border-collapse:collapse;
   margin-top:0.27rem
 }

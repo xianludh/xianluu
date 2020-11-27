@@ -171,7 +171,8 @@
             <div class="txt-scroll txt-scroll-default">
                 <div class="scrollbox">
                     <div class="txt">
-                        ms数值越低访问速度越快&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ms数值越低访问速度越快 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ms数值越低访问速度越快 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ms数值越低访问速度越快 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                        欢迎莅临开元棋牌【k44.com】我们秉承“服务至上，客户第一”的经营理念！竭诚为每一位玩家提供专业、高效、优质的服务！以诚信树立品牌，良心铸就经典，看得到的贴心，领得到的实惠，邀请您的朋友一起加入我们吧！！
+                        
                     </div>
                     <div class="txt-clone">
                     </div>
@@ -261,7 +262,7 @@
                 <td>
                     <div>
                         <a href="https://k86780.com/m/#/home?homeGameType=10004" target="_blank">
-                            <img src="./images/vip.png" alt="">
+                            <img src="./images/qp.png" alt="">
                             <span>棋牌游戏</span>
                         </a>
                     </div>
@@ -269,7 +270,7 @@
                 <td>
                     <div>
                         <a href="https://k86780.com/m/#/home?homeGameType=10001" target="_blank">
-                            <img src="./images/actity.png" alt="">
+                            <img src="./images/dz.png" alt="">
                             <span>电子游戏</span>
                         </a>
                     </div>
@@ -277,7 +278,7 @@
                 <td>
                     <div>
                         <a href="https://k86780.com/m/#/home?homeGameType=10005" target="_blank">
-                            <img src="./images/jiebei.png" alt="">
+                            <img src="./images/py.png" alt="">
                             <span>捕鱼游戏</span>
                         </a>
                     </div>
@@ -294,7 +295,7 @@
             <tr>
                 <td>
                     <div>
-                        <a href="https://k86780.com/m/#/activity" target="_blank">
+                        <a href="https://k86780.com/m/#/activity?activityId=1" target="_blank">
                             <img src="./images/jlb.png" alt="">
                             <span>VIP俱乐部</span>
                         </a>
@@ -318,7 +319,7 @@
                 </td>
                 <td>
                     <div>
-                        <a id="app">
+                        <a href="https://k86780.com/m/#/home?register=1" target="_blank">
                             <img src="./images/mapp.png" alt="">
                             <span>APP下载</span>
                         </a>
@@ -367,9 +368,9 @@
     autourl[4] = 'https://k81236.com'
 
     document.querySelectorAll('.speedlist li').forEach(function (item, index) {
-    item.children[4].children[0].href = autourl[index]
-    item.children[2].innerText = autourl[index]
-  })
+        item.children[4].children[0].href = autourl[index]
+        item.children[2].innerText ='www.' + autourl[index].split('//')[1]
+    })
 
   function speed (element) {
         for (var i of  document.querySelectorAll(element)) {
@@ -391,16 +392,16 @@
     } 
 
     
-    document.getElementById('app').onclick= function(){
-                var u = navigator.userAgent;
-                var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-                var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-                if(isiOS){
-                    window.open("https://k86780.com/app-download/index.html",'_blank');
-                }else if(isAndroid){
-                    window.open("https://k86780.com/m/#/home?register=1",'_blank');
-                }
-    }
+    // document.getElementById('app').onclick= function(){
+    //             var u = navigator.userAgent;
+    //             var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+    //             var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    //             if(isiOS){
+    //                 window.open("https://k86780.com/app-download/index.html",'_blank');
+    //             }else if(isAndroid){
+    //                 window.open("https://k86780.com/m/#/home?register=1",'_blank');
+    //             }
+    // }
   </script>
 
   <script>

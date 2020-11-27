@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<script type="text/javascript" src="js/flexible.js"></script>
-	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
-    <script type="text/javascript" src="js/txtscroll.js"></script>
+    <script src="https://cdn.suoluomei.com/common/js2.0/vue/v2.5.16/vue.js"></script>
+    <script src="https://cdn.suoluomei.com/common/js2.0/npm/vant@2.2/lib/vant.min.js"></script>
+   <link rel="stylesheet" href="https://cdn.suoluomei.com/common/js2.0/npm/vant@2.2/lib/index.css">
     <style>
 	.swiper-container {
       width: 100%;
@@ -125,26 +126,24 @@
                 width: 4.67rem;
                 height: 1.07rem;
             }
-            .txt-scroll {
-            width: 7.5rem;
-            height: 0.8rem;
-            line-height: 0.8rem;
-            }
-            .scrollbox {
-                    width: 100%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    transition: all .2s;
-            }
-            .scrollbox .txt, .scrollbox .txt-clone {
-                display: inline;
-                position: relative;
-                color: #fff;
-                font-size: 0.32rem;
-            }
-         
             
-        
+            .gg {
+            color: white;
+            display: flex;
+            line-height: 0.85rem;
+            background: #343434;
+            }
+            .gg .zx {
+                color: #F8BE83;
+                width: 2.5rem;
+                font-size: 0.37rem;
+                padding-left:0.1rem;
+            }
+            .gg img {
+                vertical-align: middle;
+                width: 0.43rem;
+                height: 0.4rem;
+            }
       </style>
    
 </head>
@@ -154,7 +153,7 @@
                 当前浏览器版本太低,建议升级道最新版本
             </p>
         <![endif]-->
-  <div class="content">
+  <div class="content" id="Vue">
 		<div class="header">
 			<div class="header-left">
 				<img  src="./images/logo.png">
@@ -164,20 +163,11 @@
 			</div>
 		</div>
 		<div class="middleP"></div>
-		<div class="hd clearfix">
-            <div class="lines">
-                <span></span> 最新消息：
-            </div>
-            <div class="txt-scroll txt-scroll-default">
-                <div class="scrollbox">
-                    <div class="txt">
-                        欢迎莅临开元棋牌【k44.com】我们秉承“服务至上，客户第一”的经营理念！竭诚为每一位玩家提供专业、高效、优质的服务！以诚信树立品牌，良心铸就经典，看得到的贴心，领得到的实惠，邀请您的朋友一起加入我们吧！！
-                        
-                    </div>
-                    <div class="txt-clone">
-                    </div>
-                </div>
-            </div>
+        <div class="gg" style="display:flex">
+            <span class="zx" style="font-size: 0.36rem; text-indent: 0.1rem;"><img src="./images/message.png" />&nbsp;最新消息：</span>
+            <van-notice-bar delay='0'>
+            欢迎莅临开元棋牌【k44.com】我们秉承“服务至上，客户第一”的经营理念！竭诚为每一位玩家提供专业、高效、优质的服务！以诚信树立品牌，良心铸就经典，看得到的贴心，领得到的实惠，邀请您的朋友一起加入我们吧！！
+            </van-notice-bar>
         </div>
         <div class="banner">
 						<div class="swiper-container">
@@ -295,7 +285,7 @@
             <tr>
                 <td>
                     <div>
-                        <a href="https://k86780.com/m/#/activity?activityId=1" target="_blank">
+                        <a href="http://amxpj.9161252.com:801/m/#/activity?activityId=1" target="_blank">
                             <img src="./images/jlb.png" alt="">
                             <span>VIP俱乐部</span>
                         </a>
@@ -333,20 +323,17 @@
     </div> -->
   </div>
   <script>
-      window.onload = function () {
-          let speeds;
-        var u = navigator.userAgent;
-        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
-        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-        if(isiOS){
-            speeds = 8;
-        }else if(isAndroid){
-           speeds = 25
-        }
-	  	$('.txt-scroll-default').txtscroll({
-	  			'speed': speeds
-	  		  });
-	  };
+     new Vue({
+            el:"#Vue",
+            data:{
+                    active: 0
+            },
+            methods:{
+
+            },
+            created(){
+            }
+    })
 
     var swiper = new Swiper('.swiper-container', {
       watchSlidesProgress: true,
@@ -411,3 +398,21 @@
 </body>
 
 </html>
+<style>
+    .van-notice-bar {
+        background: #343434;
+        height: 0.85rem;
+        flex:1;
+        padding:0;
+    }
+    .van-notice-bar__content {
+        color:white;
+        font-size: 0.37rem;
+        padding-left: 80vw !important;
+    }
+    .van-notice-bar__wrap {
+        height: 100%;
+        line-height: 0.85rem;
+    }
+    
+</style>

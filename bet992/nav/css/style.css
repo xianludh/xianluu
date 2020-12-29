@@ -1,0 +1,257 @@
+@charset "utf-8";html{background:#fff;color:#000}
+article,aside,blockquote,body,button,code,dd,details,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul{margin:0;padding:0}
+body,button,input,select,textarea{font:12px \5b8b\4f53,arial,sans-serif}
+body,html{width:100%;font-family:"微软雅黑",arial,sans-serif;background-color:#202020;position:relative;overflow-x:hidden;overflow-y:auto}
+html{-o-overflow-style:-o-autohiding-scrollbar;-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;-moz-overflow-scrolling:touch;-o-overflow-scrolling:touch;overflow-scrolling:touch}
+input,select,textarea{font-size:100%;font-family:"微软雅黑";line-height:20px;display:inline-block;outline:0}
+input:focus,select:focus,textarea:focus{border:1px solid #735a6f}
+button{background:0 0;border:none;cursor:pointer}
+table{border-collapse:collapse;border-spacing:0}
+th{text-align:inherit}
+fieldset,img{border:none}
+iframe{display:block}
+abbr,acronym{border:none;font-variant:normal}
+del{text-decoration:line-through}
+i{font-style:normal}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}
+q:after,q:before{content:''}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+a{color:#000;}
+a:hover{text-decoration:none}
+a,ins{text-decoration:none}
+a:focus{outline:0}
+.clearfix:after,.clearfix:before{content:"";display:table}
+.clearfix:after{clear:both;overflow:hidden}
+.clearfix{zoom:1}
+.clear{clear:both;display:block;font-size:0;height:0;line-height:0;overflow:hidden}
+.hide{display:none}
+.block{display:block}
+.fl,.fr{display:inline}
+.fl{float:left}
+.fr{float:right}
+
+body {
+    background: #000;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+.content {
+    width: 100%;
+}
+.kf {
+    width:137px;
+    height: 151px;
+    background: url('../images/kf.png');
+    position: absolute;
+    top:260px;
+    right:20px;
+    z-index: 1000;
+    transition: all .3s ease;
+}
+ .kf a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.header {
+    width:100%;
+    height: 115px;
+    background: #004531;
+}
+.header .box {
+    width:1200px;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.line {
+    width:100%;
+    height: 795px;
+    background: url(../images/bg.png);
+    padding-top:18px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
+}
+.line .nav {
+    width: 100%;
+    text-align: center;
+    margin-top:-86px;
+}
+
+.line .box {
+    width:1200px;
+    height: 494px;
+    background: url(../images/carousel.png);
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+   margin-top:-60px;
+}
+.line .box .box-left {
+    width:782px;
+    padding:15px 0 0 56px;
+}
+.line .box .box-left .title {
+    width:470px;
+    margin:0 auto;
+    margin-bottom: 15px;
+}
+.line .box .box-left .title span {
+   font-size: 16px;
+   font-family: Microsoft YaHei;
+   font-weight: 400;
+   color: #ffffff;
+   line-height: 26px;
+}
+.line .box .box-left .title span:nth-child(2) {
+    margin-left:5px;
+}
+.line .box .box-left .title span:nth-child(3) {
+    margin-right:5px;
+}
+.line .box .box-left .title img {
+    vertical-align: middle;
+}
+.line .box .box-left ul {
+   width: 100%;
+   box-sizing: border-box;
+}
+.line .box .box-left ul li {
+   height: 46px;
+   margin-bottom: 10px;
+   display: flex;
+   justify-content: space-between;
+}
+.line .box .box-left ul li span {
+   display: inline-block;
+   height: 46px;
+   line-height: 46px;
+}
+.line .box .box-left ul li .jt {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+}
+
+.line .box .box-left ul li .ms {
+   width: 110px;
+   background: #055D46;
+   font-size: 18px;
+   font-family: Microsoft YaHei;
+   font-weight: 400;
+   color: #F5DB1F;
+   text-align: center;
+}
+
+.line .box .box-left ul li .url {
+   width: 315px;
+   height: 46px;
+   background: #055D46;
+   text-align: center;
+   font-size: 22px;
+   font-family: Microsoft YaHei;
+   font-weight: 400;
+   color: #FFFFFF;
+}
+.line .box .box-left ul li .btn-open {
+    width:135px;
+    height: 46px;
+    background: #f4db1f;
+}
+.line .box .box-left ul li .btn-open a{
+    display: inline-block;
+    width:100%;
+    height: 100%;
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #161617;
+    text-align: center;
+}
+.line .box .box-left .reCheck {
+    display: block;
+    width:393px;
+    height: 63px;
+    margin:30px auto 0;
+    background: url(../images/reCheck.png);
+}
+.line .box .box-right {
+   width:466px;
+   text-align: center;
+}
+.line .box .box-right .code {
+    width:393px;
+    display: flex;
+    justify-content: space-between;
+    margin-left:37px;
+}
+.line .box .box-right .code .android .code-img,.ios .code-img{
+    width: 184px;
+    height: 184px;
+    background: url(../images/codeBox.png);
+    margin-bottom: 20px;
+    padding:5px 0 0 5px;
+}
+.line .box .box-right .text {
+    font-size: 36px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFE508;
+    letter-spacing: 8px;
+    margin-top:10px;
+}
+.carousel {
+    width:100%;
+    height:202px;
+    background: #022B21;
+}
+.footer {
+    width:100%;
+    height: 213px;
+    background: #023B2D;
+}
+.footer .box {
+    width: 1050px;
+    height: 180px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.footer .box a {
+    display: inline-block;
+    cursor: pointer;
+}
+.footer .box a:hover span {
+    color: #FFFFFF;
+}
+.footer .box span {
+    display: block;
+    font-size: 23px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color:#F9C670;
+    margin-top:5px;
+}
+.footer .copyright {
+    width:100%;
+    height: 34px;
+    line-height: 34px;
+    background: #001C15;
+    text-align: center;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #1B9073;
+}

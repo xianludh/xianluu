@@ -1,11 +1,11 @@
 
-    var save=""; 
+  var save=""; 
 	var tim=1;  
 	setInterval("tim++",10);  
 	var b=1;  
 	var autourl=new Array();  
-	autourl[1]="https://vn4411.com";autourl[2]="https://vn4433.com";autourl[3]="https://vn4477.com";autourl[4]="https://vn4488.com";autourl[5]="https://vn4499.com";autourl[6]="https://vn4499.com"; 
-	function auto(url,b){ 
+	autourl[1]="//b4177.com";autourl[2]="//b4200.com";autourl[3]="//b4022.com";autourl[4]="//b4266.com";autourl[5]="//b3349.com";
+    function auto(url,b){
 		$("#sudu"+b).html(tim+"ms");
 	}  
 	function run(){  

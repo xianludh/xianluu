@@ -38,9 +38,7 @@ a:focus{outline:0}
 body {
     background: #000;
 }
-html::-webkit-scrollbar{
-    display: none;
-}
+
 .content {
     width: 100%;
 }
@@ -49,8 +47,8 @@ html::-webkit-scrollbar{
     height: 151px;
     background: url('../images/kf.png');
     position: absolute;
-    top:260px;
-    right:20px;
+    top:330px;
+    right:40px;
     z-index: 1000;
     transition: all .3s ease;
 }
@@ -212,17 +210,17 @@ html::-webkit-scrollbar{
 }
 .carousel {
     width:100%;
-    height:202px;
+    height:200px;
     background: #022B21;
 }
 .footer {
     width:100%;
-    height: 213px;
+    height: 204px;
     background: #023B2D;
 }
 .footer .box {
-    width: 1050px;
-    height: 180px;
+    width: 1100px;
+    height: 170px;
     margin:0 auto;
     display: flex;
     justify-content: space-between;
@@ -236,13 +234,14 @@ html::-webkit-scrollbar{
 .footer .box a:hover span {
     color: #FFFFFF;
 }
+
 .footer .box span {
     display: block;
-    font-size: 23px;
+    font-size: 20px;
     font-family: Microsoft YaHei;
     font-weight: 400;
     color:#F9C670;
-    margin-top:5px;
+    margin-top:4px;
 }
 .footer .copyright {
     width:100%;

@@ -25,12 +25,12 @@
  <style>
    
     .swiper-container {
-      width: 100%;
+      width: 1200px;
       height: 167px;
-      padding-top:20px;
+      padding-top:15px;
     }
     .swiper-slide {
-      width:448px;
+      width:461px;
       height: 167px;
       text-align: center;
       font-size: 18px;
@@ -235,9 +235,9 @@
                         var slide = this.slides.eq(i);
                         var slideProgress = this.slides[i].progress;
                         if (Math.abs(slideProgress) > 1) {
-                            var modify = Math.abs(slideProgress)  * 0.12;
+                            var modify = Math.abs(slideProgress)  * 0.1;
                         }
-                        translate = slideProgress * modify * 355 + 'px';
+                        translate = slideProgress * modify * 461 + 'px';
                         scale = 1 - Math.abs(slideProgress) / 5;
                         zIndex = 99 - Math.abs(Math.round(10 * slideProgress));
                         slide.transform('translateX(' + translate + ') scale(' + scale + ')');
@@ -263,12 +263,12 @@
 </script>
 <script type="text/javascript">
  var autourl = new Array()
-  autourl[0] = 'bb365t.com'
-  autourl[1] = 'bb365b.com'
-  autourl[2] = 'bb365c.com'
-  autourl[3] = 'bb365g.com'
-  autourl[4] = 'bb365e.com'
-  autourl[5] = 'bb365f.com'
+  autourl[0] = 'bb365b.com'
+  autourl[1] = 'bb365c.com'
+  autourl[2] = 'bb365k.com'
+  autourl[3] = 'bb365p.com'
+  autourl[4] = 'bb365q.com'
+  autourl[5] = 'bb365s.com'
 
  
   document.querySelectorAll('.speedlist li').forEach(function (item, index) {
@@ -305,7 +305,7 @@
         else if (typeof document.body != 'undefined') {
           bodyTop = document.body.scrollTop;
         }
-        $("#kf").css("top", 230 + bodyTop)
+        $("#kf").css("top", 330 + bodyTop)
         },100)
       })
     });

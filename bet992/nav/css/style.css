@@ -37,8 +37,8 @@ a:focus{outline:0}
 
 body {
     background: #000;
+    position: relative;
 }
-
 .content {
     width: 100%;
 }
@@ -198,7 +198,12 @@ body {
     height: 184px;
     background: url(../images/codeBox.png);
     margin-bottom: 20px;
-    padding:5px 0 0 5px;
+    padding:6px;
+}
+.line .box .box-right .code .android .code-img .ma1,.ios .code-img .ma2 {
+    background: #fff;
+    padding:3px;
+    margin-top:1px;
 }
 .line .box .box-right .text {
     font-size: 36px;

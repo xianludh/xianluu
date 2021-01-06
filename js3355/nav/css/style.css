@@ -1,0 +1,194 @@
+@charset "utf-8";html{background:#fff;color:#000}
+article,aside,blockquote,body,button,code,dd,details,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,hr,input,legend,li,menu,nav,ol,p,pre,section,td,textarea,th,ul,a{margin:0;padding:0}
+body,button,input,select,textarea{font:12px \5b8b\4f53,arial,sans-serif}
+body,html{width:100%;font-family:"微软雅黑",arial,sans-serif;background-color:#202020;position:relative;overflow-x:hidden;overflow-y:auto}
+html{-o-overflow-style:-o-autohiding-scrollbar;-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;-moz-overflow-scrolling:touch;-o-overflow-scrolling:touch;overflow-scrolling:touch}
+input,select,textarea{font-size:100%;font-family:"微软雅黑";line-height:20px;display:inline-block;outline:0}
+input:focus,select:focus,textarea:focus{border:1px solid #735a6f}
+button{background:0 0;border:none;cursor:pointer}
+table{border-collapse:collapse;border-spacing:0}
+th{text-align:inherit}
+fieldset,img{border:none}
+iframe{display:block}
+abbr,acronym{border:none;font-variant:normal}
+del{text-decoration:line-through}
+i{font-style:normal}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:500}
+q:after,q:before{content:''}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+a{color:#000;}
+a:hover{text-decoration:none}
+a,ins{text-decoration:none}
+a:focus{outline:0}
+.clearfix:after,.clearfix:before{content:"";display:table}
+.clearfix:after{clear:both;overflow:hidden}
+.clearfix{zoom:1}
+.clear{clear:both;display:block;font-size:0;height:0;line-height:0;overflow:hidden}
+.hide{display:none}
+.block{display:block}
+.fl,.fr{display:inline}
+.fl{float:left}
+.fr{float:right}
+
+body {
+    background: #000;
+}
+.main {
+    width: 100%;
+    background: url(../images/bg.jpg) 100% 100%;
+}
+.kf {
+    width:185px;
+    height: 188px;
+    background: url('../images/kf.png');
+    position: absolute;
+    top:260px;
+    right:20px;
+    z-index: 1000;
+    transition: all .3s ease;
+}
+ .kf a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+ 
+.header {
+    width:100%;
+    height: 120px;
+    background: linear-gradient(0deg, #222222, #000000);
+}
+.header .box {
+    width:1200px;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .box .logo {
+    height: 100%;
+}
+.content {
+    width:1140px;
+    margin:0 auto;
+}
+.line {
+    width:850px;
+    margin:0 auto;
+}
+.line .title {
+    width:100%;
+    text-align: center;
+    margin-top:60px;
+}
+.line ul {
+    width: 788px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:40px;
+}
+.line ul li {
+    width: 373px;
+    height: 77px;
+    background: url(../images/xl.png);
+    margin-bottom: 43px;
+    display: flex;
+    justify-content: space-between;
+}
+.line ul li:hover{
+    background: url(../images/xl_hover.png);
+}
+.line ul li .box1 {
+    width:100px;
+    height: 100%;
+    text-align: center;
+}
+.line ul li .box1 span {
+    height: 36px;
+    line-height: 36px;
+    display: block;
+    font-size: 41px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #FFD057;
+    margin-top:10px;
+}
+.line ul li .box1 i {
+    font-size: 15px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #DDDDDD;
+}
+.line ul li .box2 {
+    width:200px;
+    height: 100%;
+}
+.line ul li .box2 p {
+    cursor: default;
+}
+.line ul li .box2 .xl {
+    font-size: 23px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #E0E0E0;
+    margin-top:10px;
+}
+.line ul li .box2 .xl img {
+    margin-left:2rem;
+}
+.line ul li .box2 .url {
+    font-size: 19px;
+    font-family: MicrosoftYaHeiLight;
+    font-weight: 400;
+    color: #b59543;
+}
+.line ul li .box3 {
+    width:75px;
+    height: 100%;
+}
+.line ul li .box3 a {
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+    width: 50px;
+    height: 100%;
+    line-height: 33px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: #262626;
+    text-align: center;
+}
+.line .check{
+    cursor: pointer;
+}
+.game {
+    width: 100%;
+    margin-top:65px;
+    text-align: center;
+}
+.footer {
+    width: 100%;
+    margin-top:65px;
+    text-align: center;
+}
+.footer img:first-child {
+    margin-bottom: 50px;
+}
+.footer .copyright {
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #838383;
+    margin:57px 0 50px 0;
+}
+
+

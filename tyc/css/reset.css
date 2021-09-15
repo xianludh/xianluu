@@ -162,8 +162,8 @@ ins {
 }
 
 p {
-	line-height: 22px;
-	margin-top: 22px;
+	/* line-height: 22px;
+	margin-top: 22px; */
 	letter-spacing: 0.5px;
     word-wrap: break-word;
 }

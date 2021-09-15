@@ -21,9 +21,9 @@ body {
   box-sizing: border-box;
   background-color: #000;
 }
-.header{width:100%; z-index: 999;display: flex;justify-content: center; /* 水平居中 */
+.header{width:100%; z-index: 999;display: flex; /* 水平居中 */
   align-items: center;     /* 垂直居中 */}
-.header .logo { text-align: center; width: 50%;}
+.header .logo { text-align: center; width: 45%;}
 .header .logo img { width: 2.7rem;height: 0.96rem;vertical-align: middle;}
 .header .right { 
   font-size: 0.51rem;
@@ -60,7 +60,7 @@ body {
   margin-top: 0.1rem;
 }
 .wz .ts .zh{
-  font-size: 0.37rem;
+  font-size: 0.36rem;
   font-family: PingFang SC;
   font-weight: 500;
   color: #F2CB50;

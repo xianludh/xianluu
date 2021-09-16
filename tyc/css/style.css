@@ -21,6 +21,11 @@ body {
   box-sizing: border-box;
   background-color: #000;
 }
+.scroller {
+  width: 100%;
+  background: url('../images/bg.png') no-repeat;
+  background-size: cover;
+}
 .header{width:100%; z-index: 999;display: flex; /* 水平居中 */
   align-items: center;     /* 垂直居中 */}
 .header .logo { text-align: center; width: 45%;}
@@ -42,6 +47,7 @@ body {
   border-radius: 5px;
   margin: 0 auto;
   padding: 0 0.27rem 0.2rem 0.18rem;
+  background-color: #000;
 }
 .wz .ts .ts1{
   font-size: 0.37rem;

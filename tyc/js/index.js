@@ -4,8 +4,8 @@ setInterval(function() {
     jroll.refresh()
 }, 500);
 var urllink=[
-    'http://t4851.com?register=1',
-    'http://t4852.com?register=1',
+    'https://t4851.com:6443?register=1',
+    'https://t4852.com:6443?register=1',
 ];
 function gopath() {
     window.location.href = urllink[Math.floor((Math.random()*urllink.length))]

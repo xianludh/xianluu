@@ -1,68 +1,186 @@
 <!doctype html>
 <html lang="zh-CN">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>welcome</title>
-  <meta name="description" content="">
-  <meta name="viewport"
-        content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://v1.cnzz.com/z_stat.php?id=1280327500&web_id=1280327500";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-    })();
-  </script>   
-  <script rel="script" type="text/javascript">
-    document.documentElement.style.fontSize = (window.document.documentElement.clientWidth / 750) * 100 + 'px'
-  </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>welcome</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/reset.css">
+    <script>
+        if (navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
+            window.location.href = './mobile.html';
+        }
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://v1.cnzz.com/z_stat.php?id=1280327500&web_id=1280327500";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <style>
+        .page {
+            width: 100%;
+            max-width: 750px;
+            margin: 0 auto;
+            height: 1314px;
+            background-image: url(images/bg.png);
+        }
+
+        .header {
+            width: 100%;
+            z-index: 999;
+            display: flex;
+            /* 水平居中 */
+            align-items: center;
+            padding: 28px 0;
+        }
+
+        .header .logo {
+            text-align: center;
+            width: 45%;
+        }
+
+        .header .logo img {
+            width: 270px;
+            height: 96px;
+            vertical-align: middle;
+        }
+
+        .header .right {
+            font-size: 51px;
+            font-family: PingFang SC;
+            font-weight: bold;
+            color: #EFD17F;
+        }
+
+        .wz {
+            width: 100%;
+        }
+
+        .wz .ts {
+            width: 690px;
+            border: 1px solid #B8B8B8;
+            border-radius: 5px;
+            margin: 0 auto;
+            padding: 0 37px 20px 18px;
+            background-color: #000;
+        }
+
+        .wz .ts .ts1 {
+            font-size: 37px;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: #B8B8B8;
+            line-height: 60px;
+        }
+
+        .wz .ts .yw {
+            font-size: 37px;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: #FF0000;
+            line-height: 65px;
+            margin-top: 10px;
+        }
+
+        .wz .ts .zh {
+            font-size: 35px;
+            font-family: PingFang SC;
+            font-weight: 500;
+            color: #F2CB50;
+            line-height: 60px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            height: 95px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+            margin-top: 27px;
+        }
+
+        .btn .zc {
+            width: 229px;
+            height: 95px;
+            vertical-align: top;
+            cursor: pointer;
+        }
+
+        @keyframes heart_beat {
+            0% {
+                transform: scale(.95)
+            }
+
+            50% {
+                transform: scale(1.05)
+            }
+
+            100% {
+                transform: scale(.95)
+            }
+        }
+
+        .btn .ios {
+            width: 229px;
+            height: 67px;
+            vertical-align: top;
+            animation: heart_beat .8s infinite linear;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-<div class="page">
-  <div class="body scroll" id="scroll">
-    <div class="scroller">
-      <div class="header">
-        <a href="###" class="logo">
-            <img src="images/logo.png" alt="">
-        </a>
-        <p class="right">合并运营通知</p>
-    </div>
-    <div class="wz">
-        <div class="ts">
-          <p class="ts1" style="margin-top: 0.35rem;">尊敬的玩家：</p>
-          <p class="ts1" style="text-indent: 0.35rem;">由于运营方针的更改，本站已于08月26日合并至太阳城集团，为了您
-            有更好的游戏服务，请联系本站在线
-            客服协助您做贵宾账号登记，领取新
-            的更新福利大奖。并衷心的祝福您在
-            澳门太阳城获得更好的娱乐体验。希望您可以在澳门太阳城这个博金福地，八彩来财，娱在开心，乐在随行！
-            </p>
-            <p class="yw">业务转移细节及福利：</p>
-            <p style="line-height: 0.6rem;"><span style="font-size: 0.4rem;color: #FF0000;;">①</span> <span style="font-size: 0.36rem;font-family: PingFang SC;
+    <div class="page">
+        <div class="header">
+            <a href="###" class="logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <p class="right">合并运营通知</p>
+        </div>
+        <div class="wz">
+            <div class="ts">
+                <p class="ts1" style="margin-top: 35px;">尊敬的玩家：</p>
+                <p class="ts1" style="text-indent: 35px;">
+                    由于运营方针的更改,本站已于08月26日合并至太阳城集团,为了您有更好的游戏服务,请联系本站在线客服协助您做贵宾账号登记,领取新的更新福利大奖。并衷心的祝福您在澳门太阳城获得更好的娱乐体验。希望您可以在澳门太阳城这个博金福地,八彩来财,娱在开心,乐在随行！
+                </p>
+                <p class="yw">业务转移细节及福利：</p>
+                <p style="line-height: 60px;"><span style="font-size: 40px;color: #FF0000;;">①</span> <span style="font-size: 36px;font-family: PingFang SC;
               font-weight: 500;
               color: #FFFFFF;
-              line-height: 0.6rem;">本站注册会员可领红包<span style="color:#F2CB50;">8888元！</span></span></p>
-             <p style="line-height: 0.6rem;"><span style="font-size: 0.4rem;color: #FF0000;;">②</span> <span style="font-size: 0.36rem;font-family: PingFang SC;
+              line-height: 60px;">本站注册会员可领红包<span style="color:#F2CB50;">8888元！</span></span></p>
+                <p style="line-height: 60px;"><span style="font-size: 40px;color: #FF0000;;">②</span> <span style="font-size: 36px;font-family: PingFang SC;
               font-weight: 500;
               color: #FFFFFF;
-              line-height: 0.6rem;">本站注册可享受首存<span style="color:#F2CB50;">528元！</span></span></p>  
-              <p class="zh">
-                投注1元，即可享受双重返水无上限！最高可领取彩金返利3888元，大奖无限喷发，赔率彩金8888元,<span style="color: #FFFFFF;"> 通关拿大奖！</span></p>
+              line-height: 60px;">本站注册可享受首存<span style="color:#F2CB50;">528元！</span></span></p>
+                <p class="zh">
+                    投注1元,即可享受双重返水无上限!最高可领取彩金返利3888元,大奖无限喷发,赔率彩金8888元,<span style="color: #FFFFFF;"> 通关拿大奖！</span></p>
+            </div>
+        </div>
+        <div class="btn">
+            <img class='zc' src="images/zc.png" alt="" onclick="gopath()">
+            <img class='ios' src="images/ios_btn.png" alt="" style="margin: 0 12px;" onclick="downApp()">
+            <img class='ios' src="images/and_btn.png" alt="" onclick="downApp()">
         </div>
     </div>
-    <div class="btn">
-       <img class='zc' src="images/zc.png" alt="" onclick="gopath()">
-       <img class='ios' src="images/ios_btn.png" alt="" style="margin: 0 0.12rem;" onclick="down()">
-       <img class='ios' src="images/and_btn.png" alt="" onclick="down()">
-    </div>
-  </div>
-</div>
-</div>
 </body>
-<script rel="script" type="text/javascript" src="js/jroll-lite.js"></script>
-<script src="js/index.js"></script>
+<script src="js/xinstall_inner_e.min.js"></script>
+<script src="js/down.js"></script>
+<script>
+    var urllink = [
+        'https://t4851.com:6443?register=1',
+        'https://t4852.com:6443?register=1',
+    ];
+
+    function gopath() {
+        window.location.href = urllink[Math.floor((Math.random() * urllink.length))]
+    }
+</script>
+
 </html>
